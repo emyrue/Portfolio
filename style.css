@@ -30,6 +30,7 @@ header {
 .intro {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   min-width: 288px;
+  font-size: 14px;
 }
 
 button {
@@ -39,4 +40,6 @@ button {
   background-color: #1A2236;
   color: white;
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-size: 16px;
+  margin: 16px;
 }
