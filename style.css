@@ -54,7 +54,7 @@ button:hover {
 }
 
 button:enabled {
-  background-color: #071b4e;
+  background-color: #000000;
 }
 
 button:disabled {
