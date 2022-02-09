@@ -18,10 +18,16 @@ header {
 .headline {
   display: flex;
   flex-direction: column;
+  padding: 6px;
 }
 
 .name {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
-  width: 220px;
+  min-width: 220px;
+}
+
+.intro {
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  min-width: 288px;
 }
