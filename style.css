@@ -47,14 +47,15 @@ button {
   font-size: 16px;
   margin-top: 50px;
   margin-bottom: 30px;
+  border-color: #1a2236;
 }
 
 button:hover {
-  background-color: #0f1420;
+  background-color: #9599a3;
 }
 
 button:enabled {
-  background-color: #000000;
+  background-color: #1d0683;
 }
 
 button:disabled {
