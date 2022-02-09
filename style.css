@@ -1,8 +1,27 @@
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+}
+
+.logo {
+  width: 111px;
+  height: 74px;
 }
 
 .menu {
-    padding: 20px;
+  width: 20px;
+  height: 14px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-size: 50px;
+  width: 220px;
 }
