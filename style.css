@@ -1,12 +1,12 @@
 body {
-    width: 300px;
+  min-width: 300px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  min-width: 300px;
 }
 
 .logo {
@@ -23,12 +23,13 @@ header {
   display: flex;
   flex-direction: column;
   padding: 6px;
+  align-items: center;
 }
 
 .name {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
-  width: 220px;
+  width: 288px;
 }
 
 .intro {
@@ -40,7 +41,6 @@ header {
 button {
   width: 288px;
   height: 50px;
-  align-self: center;
   background-color: #1A2236;
   color: white;
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
