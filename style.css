@@ -1,12 +1,12 @@
 body {
-  min-width: 300px;
+  width: 320px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 300px;
+  width: 320px;
 }
 
 .logo {
