@@ -41,10 +41,22 @@ header {
 button {
   width: 288px;
   height: 50px;
-  background-color: #1A2236;
+  background-color: #1a2236;
   color: white;
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 16px;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #0f1420;
+}
+
+button:enabled {
+  background-color: #071b4e;
+}
+
+button:disabled {
+  background-color: #1a2236;
 }
