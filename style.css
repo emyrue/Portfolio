@@ -2,3 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.menu {
+    padding: 20px;
+}
