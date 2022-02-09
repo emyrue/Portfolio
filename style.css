@@ -31,3 +31,12 @@ header {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   min-width: 288px;
 }
+
+button {
+  width: 288px;
+  height: 50px;
+  align-self: center;
+  background-color: #1A2236;
+  color: white;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
