@@ -75,3 +75,9 @@ button:hover {
 button:enabled {
   background-color: #1d0683;
 }
+
+.computer-image {
+  width: 100vw;
+  height: auto;
+  margin: 0px;
+}
