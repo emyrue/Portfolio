@@ -63,7 +63,7 @@ h2 {
 }
 
 .banner {
-  flex-basis: 288px;
+  flex-basis: 100vw;
   flex-shrink: 1;
   height: auto;
 }
