@@ -1,12 +1,8 @@
-body {
-  min-width: 300px;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .logo {
@@ -22,25 +18,30 @@ nav {
 
 .headline {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 6px;
   align-items: center;
+  justify-content: center;
+  max-width: 100vw;
 }
 
 .name {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
-  max-width: 288px;
+  flex-basis: 288px;
+  flex-shrink: 1;
 }
 
 .intro {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
-  max-width: 288px;
   font-size: 14px;
+  flex-basis: 288px;
+  flex-shrink: 1;
 }
 
 button {
-  width: 288px;
+  flex-basis: 288px;
+  flex-shrink: 1;
   height: 50px;
   background-color: #1a2236;
   color: white;
@@ -49,6 +50,12 @@ button {
   margin-top: 50px;
   margin-bottom: 30px;
   border-color: #1a2236;
+}
+
+.banner {
+  flex-basis: 288px;
+  flex-shrink: 1;
+  height: auto;
 }
 
 button:hover {
