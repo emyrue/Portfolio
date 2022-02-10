@@ -107,14 +107,20 @@ h2 {
   margin: 0px;
 }
 
+.project-buttons {
+  display: flex;
+}
+
 .buttons {
   margin-top: 5px;
+  margin-right: 15px;
   margin-bottom: 5px;
   background-color: #98dede;
   color: black;
   height: 25px;
   border: 2px solid #98dede;
   font-size: 12px;
+  flex-basis: auto;
 }
 
 .see-project {
