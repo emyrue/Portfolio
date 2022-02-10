@@ -86,6 +86,20 @@ h2 {
   font-size: 50px;
   margin: 20px;
 }
+
+.project {
+  background-color: #1a2236;
+}
+
+.project-name {
+  color: white;
+  font-size: 25px;
+}
+
+.project-link {
+  padding: 20px;
+}
+
 .computer-image {
   width: 100vw;
   height: auto;
@@ -98,4 +112,5 @@ h2 {
   color: black;
   height: 25px;
   border: 2px solid #98dede;
+  font-size: 12px;
 }
