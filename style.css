@@ -179,3 +179,7 @@ h2 {
   margin-top: 30px;
   font-size: 15px;
 }
+
+.lang-frame-skill {
+  display: block;
+}
