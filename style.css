@@ -1,12 +1,12 @@
 body {
-  width: 320px;
+  min-width: 300px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  min-width: 300px;
 }
 
 .logo {
@@ -29,12 +29,12 @@ header {
 .name {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
-  width: 288px;
+  max-width: 288px;
 }
 
 .intro {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
-  width: 288px;
+  max-width: 288px;
   font-size: 14px;
 }
 
@@ -56,8 +56,4 @@ button:hover {
 
 button:enabled {
   background-color: #1d0683;
-}
-
-button:disabled {
-  background-color: #1a2236;
 }
