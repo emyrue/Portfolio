@@ -117,7 +117,7 @@ h2 {
   margin-bottom: 5px;
   background-color: #98dede;
   color: black;
-  height: 25px;
+  min-height: 25px;
   border: 2px solid #98dede;
   font-size: 12px;
   flex-basis: auto;
