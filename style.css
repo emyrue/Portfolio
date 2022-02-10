@@ -132,3 +132,8 @@ h2 {
   font-size: 18px;
   margin-top: 30px;
 }
+
+.see-project:hover {
+  background-color: white;
+  color: #1a2236;
+}
