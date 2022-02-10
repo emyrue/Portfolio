@@ -94,6 +94,7 @@ h2 {
 .project-name {
   color: white;
   font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .project-link {
@@ -123,4 +124,5 @@ h2 {
   width: 200px;
   height: 50px;
   font-size: 18px;
+  margin-top: 30px;
 }
