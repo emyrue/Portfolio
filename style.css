@@ -36,14 +36,14 @@ h2 {
 }
 
 .name {
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
   flex-basis: 288px;
   flex-shrink: 1;
 }
 
 .intro {
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 14px;
   flex-basis: 288px;
   flex-shrink: 1;
@@ -55,7 +55,7 @@ h2 {
   height: 50px;
   background-color: #1a2236;
   color: white;
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 16px;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -79,7 +79,7 @@ h2 {
 .project-heading,
 .project-name,
 .buttons {
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
 .project-heading {
