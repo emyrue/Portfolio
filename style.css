@@ -49,7 +49,7 @@ h2 {
   flex-shrink: 1;
 }
 
-button {
+.collaboration {
   flex-basis: 288px;
   flex-shrink: 1;
   height: 50px;
@@ -68,11 +68,11 @@ button {
   height: auto;
 }
 
-button:hover {
+.collaboration:hover {
   background-color: #9599a3;
 }
 
-button:enabled {
+.collaboration:enabled {
   background-color: #1d0683;
 }
 
@@ -93,4 +93,6 @@ button:enabled {
   background-color: #98dede;
   color: black;
   height: 25px;
+  border-color: #98dede;
+  border-right-color: #98dede;
 }
