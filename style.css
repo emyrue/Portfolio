@@ -82,6 +82,10 @@ h2 {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
+.project-heading {
+  font-size: 50px;
+  margin: 20px;
+}
 .computer-image {
   width: 100vw;
   height: auto;
