@@ -2,11 +2,11 @@ body {
   min-width: 300px;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 300px;
+  width: 90%;
 }
 
 .logo {
