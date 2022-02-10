@@ -76,8 +76,21 @@ button:enabled {
   background-color: #1d0683;
 }
 
+.project-heading,
+.project-name,
+.buttons {
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
 .computer-image {
   width: 100vw;
   height: auto;
   margin: 0px;
+}
+
+.buttons {
+  margin: 5px;
+  background-color: #98dede;
+  color: black;
+  height: 25px;
 }
