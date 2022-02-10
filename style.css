@@ -89,6 +89,7 @@ h2 {
 
 .grid-container {
   display: grid;
+  grid-template-columns: auto;
 }
 .project {
   background-color: #1a2236;
