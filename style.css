@@ -87,6 +87,9 @@ h2 {
   margin: 20px;
 }
 
+.grid-container {
+  display: grid;
+}
 .project {
   background-color: #1a2236;
 }
@@ -121,6 +124,10 @@ h2 {
   border: 2px solid #98dede;
   font-size: 12px;
   flex-basis: auto;
+}
+
+.buttons:hover {
+  background-color: #41a5a5;
 }
 
 .see-project {
