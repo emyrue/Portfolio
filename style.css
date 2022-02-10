@@ -107,7 +107,8 @@ h2 {
 }
 
 .buttons {
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-color: #98dede;
   color: black;
   height: 25px;
