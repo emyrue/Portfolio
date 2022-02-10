@@ -93,6 +93,5 @@ h2 {
   background-color: #98dede;
   color: black;
   height: 25px;
-  border-color: #98dede;
-  border-right-color: #98dede;
+  border: 2px solid #98dede;
 }
