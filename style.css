@@ -180,6 +180,7 @@ h2 {
   font-size: 15px;
 }
 
-.lang-frame-skill {
-  display: block;
+.skills-section {
+  display: flex;
+  flex-direction: column;
 }
