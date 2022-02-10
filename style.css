@@ -105,7 +105,9 @@ h2 {
 }
 
 .project-link {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .computer-image {
@@ -135,6 +137,10 @@ h2 {
   background-color: #41a5a5;
 }
 
+.button-width-class {
+  width: 288px;
+}
+
 .see-project {
   background-color: #1a2236;
   color: white;
@@ -143,6 +149,7 @@ h2 {
   height: 50px;
   font-size: 18px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .see-project:hover {
