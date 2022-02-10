@@ -25,7 +25,8 @@
   max-width: 100vw;
 }
 
-h1, h2 {
+h1, 
+h2 {
   margin: 0;
   font-weight: normal;
 }
