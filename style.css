@@ -78,7 +78,9 @@ h2 {
 
 .project-heading,
 .project-name,
-.buttons {
+.buttons,
+.about-heading,
+.about {
   font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
@@ -144,4 +146,9 @@ h2 {
 .see-project:hover {
   background-color: white;
   color: #1a2236;
+}
+
+.about-heading,
+.about {
+  margin: 20px;
 }
