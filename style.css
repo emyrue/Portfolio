@@ -25,6 +25,10 @@ nav {
   max-width: 100vw;
 }
 
+p {
+  margin: 0;
+}
+
 .name {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
