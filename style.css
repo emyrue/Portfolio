@@ -88,7 +88,13 @@ li {
   font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
 .project-heading {
+  width: 288px;
   font-size: 50px;
   margin: 20px;
 }
