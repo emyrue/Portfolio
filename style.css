@@ -82,7 +82,8 @@ h2 {
 .about-heading,
 .about,
 .languages-heading,
-ul .list {
+.frameworks-heading,
+li {
   font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
@@ -188,8 +189,8 @@ ul .list {
   justify-content: center;
 }
 
-.languages {
-  background-image: url(./images/languages.png);
+.languages,
+.frameworks {
   width: 288px;
   height: 288px;
   display: flex;
@@ -198,8 +199,13 @@ ul .list {
   align-items: center;
 }
 
+.languages {
+  background-image: url(./images/languages.png);
+}
+
 .languages-heading,
-ul .list {
+.frameworks-heading,
+li {
   color: white;
 }
 
@@ -207,6 +213,14 @@ ul .list {
   width: 178px;
 }
 
-.languages ul {
+ul {
+  width: 178px;
+}
+
+.frameworks {
+  background-image: url(./images/frameworks.png);
+}
+
+.frameworks-heading {
   width: 178px;
 }
