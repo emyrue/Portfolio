@@ -103,6 +103,7 @@ li {
   display: grid;
   grid-template-columns: auto;
 }
+
 .project {
   background-color: #1a2236;
 }
@@ -123,7 +124,6 @@ li {
 .computer-image {
   width: 100vw;
   height: auto;
-  margin: 0px;
 }
 
 .project-buttons {
@@ -170,7 +170,7 @@ li {
 .about-heading,
 .about,
 .cv {
-  width: 288px;;
+  width: 288px;
 }
 
 .about-section {
