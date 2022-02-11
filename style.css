@@ -183,4 +183,12 @@ h2 {
 .skills-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.skills {
+  width: 288px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
