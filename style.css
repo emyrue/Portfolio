@@ -83,6 +83,7 @@ h2 {
 .about,
 .languages-heading,
 .frameworks-heading,
+.skills-heading,
 li {
   font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
@@ -190,13 +191,16 @@ li {
 }
 
 .languages,
-.frameworks {
+.frameworks,
+.skills {
   width: 288px;
   height: 288px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .languages {
@@ -205,12 +209,16 @@ li {
 
 .languages-heading,
 .frameworks-heading,
+.skills-heading,
 li {
   color: white;
 }
 
-.languages-heading {
+.languages-heading,
+.frameworks-heading,
+.skills-heading {
   width: 178px;
+  font-size: 25px;
 }
 
 ul {
@@ -221,6 +229,6 @@ ul {
   background-image: url(./images/frameworks.png);
 }
 
-.frameworks-heading {
-  width: 178px;
+.skills {
+  background-image: url(./images/skills.png);
 }
