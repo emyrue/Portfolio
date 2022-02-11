@@ -192,3 +192,11 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.form {
+  background-image: url(./images/background.png);
+}
+
+.shapes {
+  display: block;
+}
