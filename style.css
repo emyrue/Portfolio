@@ -80,7 +80,9 @@ h2 {
 .project-name,
 .buttons,
 .about-heading,
-.about {
+.about,
+.languages-heading,
+ul .list {
   font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
@@ -182,7 +184,29 @@ h2 {
 
 .skills-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.languages {
+  background-image: url(./images/languages.png);
+  width: 288px;
+  height: 288px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+.languages-heading,
+ul .list {
+  color: white;
+}
+
+.languages-heading {
+  width: 178px;
+}
+
+.languages ul {
+  width: 178px;
+}
