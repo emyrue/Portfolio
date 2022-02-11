@@ -36,26 +36,26 @@ h2 {
 }
 
 .name {
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
   flex-basis: 288px;
   flex-shrink: 1;
 }
 
 .intro {
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 14px;
   flex-basis: 288px;
   flex-shrink: 1;
 }
 
-button {
+.collaboration {
   flex-basis: 288px;
   flex-shrink: 1;
   height: 50px;
   background-color: #1a2236;
   color: white;
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 16px;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -63,15 +63,178 @@ button {
 }
 
 .banner {
-  flex-basis: 288px;
+  flex-basis: 100vw;
   flex-shrink: 1;
   height: auto;
 }
 
-button:hover {
+.collaboration:hover {
   background-color: #9599a3;
 }
 
-button:enabled {
+.collaboration:enabled {
   background-color: #1d0683;
+}
+
+.project-heading,
+.project-name,
+.buttons,
+.about-heading,
+.about,
+.languages-heading,
+.frameworks-heading,
+.skills-heading,
+li {
+  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-heading {
+  width: 288px;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.project {
+  background-color: #1a2236;
+}
+
+.project-name {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 288px;
+}
+
+.project-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.computer-image {
+  width: 100vw;
+  height: auto;
+}
+
+.project-buttons {
+  display: flex;
+  width: 288px;
+}
+
+.buttons {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #98dede;
+  color: black;
+  min-height: 25px;
+  border: 2px solid #98dede;
+  font-size: 12px;
+  flex-basis: auto;
+}
+
+.buttons:hover {
+  background-color: #41a5a5;
+}
+
+.button-width-class {
+  width: 288px;
+}
+
+.see-project {
+  background-color: #1a2236;
+  color: white;
+  border: 2px solid white;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.see-project:hover {
+  background-color: white;
+  color: #1a2236;
+}
+
+.about-heading,
+.about,
+.cv {
+  width: 288px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cv {
+  padding: 10px;
+  background-color: #1a2236;
+  color: white;
+  border: 2px solid #1a2236;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.languages,
+.frameworks,
+.skills {
+  width: 288px;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.languages {
+  background-image: url(./images/languages.png);
+}
+
+.languages-heading,
+.frameworks-heading,
+.skills-heading,
+li {
+  color: white;
+}
+
+.languages-heading,
+.frameworks-heading,
+.skills-heading {
+  width: 178px;
+  font-size: 25px;
+}
+
+ul {
+  width: 178px;
+}
+
+.frameworks {
+  background-image: url(./images/frameworks.png);
+}
+
+.skills {
+  background-image: url(./images/skills.png);
 }
