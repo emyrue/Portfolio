@@ -23,7 +23,7 @@ As you work your way through Microverse curriculum materials you will complete s
 
 👤 **Author2**
 
-- GitHub: [[@dewslyse](https://github.com/dewslyse)
+- GitHub: [@dewslyse](https://github.com/dewslyse)
 
 ## 🤝 Contributing
 
