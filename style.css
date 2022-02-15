@@ -273,15 +273,29 @@ input {
 
 textarea,
 input {
-  min-width: 288px;
-  border: 1px solid #dfdfe0;
-  padding: 15px 16px;
+  min-width: 285px;
+  border: 1px solid white;
+  padding: 15px 16px 0;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
 
+.input-box {
+  background-color: white;
+  border: 1px solid #dfdfe0;
+  min-width: 285px;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 10px;
+  color: #7d7c84;
+  padding: 16px;
+  font-family: 'Poppins', sans-serif;
+}
 textarea {
   height: 112px;
+  border: 1px solid #dfdfe0;
 }
 
 .form {

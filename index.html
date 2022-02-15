@@ -212,10 +212,14 @@
             sed do eiusmod tempor incididunt
             ut labore et dolore magna.</p>
         <form class="form" action="https://formspree.io/f/mjvlwyao" method="POST">
-            <label for="name">Your Name</label>
-            <input id="name" type="name" name="name" placeholder="Anastasia" required maxlength="30">
-            <label for="email">Your Email</label>
-            <input id="email" type="email" name="email" required placeholder="emily@emily.com">
+            <div class="input-box">    
+                <label for="name">Your Name</label>
+                <input id="name" type="name" name="name" placeholder="Anastasia" required maxlength="30">
+            </div>
+            <div class="input-box">
+                <label for="email">Your Email</label>
+                <input id="email" type="email" name="email" required placeholder="emily@emily.com">
+            </div>
             <textarea id="message" name="message" placeholder="Write your message here" required
                 maxlength="500"></textarea>
             <button class="collaboration" type="submit">Start Collaboration</button>
