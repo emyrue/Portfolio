@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -213,10 +213,11 @@
             ut labore et dolore magna.</p>
         <form class="form" action="https://formspree.io/f/mjvlwyao" method="POST">
             <label for="name">Your Name</label>
-            <input id="name" type="name" name="name">
-            <label for="email">Your email</label>
-            <input id="email" type="email" name="email">
-            <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+            <input id="name" type="name" name="name" placeholder="Anastasia" required maxlength="30">
+            <label for="email">Your Email</label>
+            <input id="email" type="email" name="email" required placeholder="emily@emily.com">
+            <textarea id="message" name="message" placeholder="Write your message here" required
+                maxlength="500"></textarea>
             <button class="collaboration" type="submit">Start Collaboration</button>
         </form>
     </section>
