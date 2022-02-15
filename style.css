@@ -238,3 +238,12 @@ ul {
 .skills {
   background-image: url(./images/skills.png);
 }
+
+.contact-form {
+  background-image: url(./images/background.png);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
