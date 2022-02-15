@@ -68,6 +68,15 @@ h2 {
   height: auto;
 }
 
+.cv {
+  padding: 10px;
+  background-color: #1a2236;
+  color: white;
+  border: 2px solid #1a2236;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
 .collaboration:hover,
 .cv:hover {
   background-color: #1d0683;
@@ -77,7 +86,6 @@ h2 {
 .project-heading {
   font-family: 'Playfair Display', sans-serif;
 }
-
 
 .project-name,
 .buttons,
@@ -172,7 +180,7 @@ p {
 }
 
 .about-heading {
-  font-size: 50;
+  font-size: 50px;
 }
 
 .about-heading,
@@ -187,15 +195,6 @@ p {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.cv {
-  padding: 10px;
-  background-color: #1a2236;
-  color: white;
-  border: 2px solid #1a2236;
-  margin-top: 30px;
-  font-size: 15px;
 }
 
 .skills-section {
