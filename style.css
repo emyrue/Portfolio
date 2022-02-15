@@ -36,7 +36,7 @@ h2 {
 }
 
 .name {
-  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
   flex-basis: 288px;
   flex-shrink: 1;
@@ -68,18 +68,19 @@ h2 {
   height: auto;
 }
 
-.collaboration:hover {
-  background-color: #9599a3;
-}
-
-.collaboration:enabled {
+.collaboration:hover,
+.cv:hover {
   background-color: #1d0683;
 }
 
-.project-heading,
+.about-heading,
+.project-heading {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+
 .project-name,
 .buttons,
-.about-heading,
 .about,
 .languages-heading,
 .frameworks-heading,
@@ -146,7 +147,8 @@ p {
 }
 
 .buttons:hover {
-  background-color: #41a5a5;
+  background-color: #4fb8b8;
+  border: 2px solid #4fb8b8;
 }
 
 .button-width-class {
@@ -167,6 +169,10 @@ p {
 .see-project:hover {
   background-color: white;
   color: #1a2236;
+}
+
+.about-heading {
+  font-size: 50;
 }
 
 .about-heading,
