@@ -255,9 +255,13 @@ ul {
 }
 
 .contact-heading {
-  padding: 106px 0;
+  padding: 106px 0 20px;
   font-size: 50px;
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+.contact-paragraph {
+  margin-bottom: 50px;
 }
 
 .contact-heading,
@@ -271,6 +275,13 @@ textarea,
 input {
   min-width: 288px;
   border: 1px solid #dfdfe0;
+  padding: 15px 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 112px;
 }
 
 .form {
