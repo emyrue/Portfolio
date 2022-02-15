@@ -36,7 +36,7 @@ h2 {
 }
 
 .name {
-  font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
   font-size: 50px;
   flex-basis: 288px;
   flex-shrink: 1;
@@ -69,22 +69,23 @@ h2 {
 }
 
 .collaboration:hover {
-  background-color: #9599a3;
-}
-
-.collaboration:enabled {
   background-color: #1d0683;
 }
 
-.project-heading,
+.about-heading,
+.project-heading {
+  font-family: 'Playfair Display', sans-serif;
+}
+
 .project-name,
 .buttons,
-.about-heading,
 .about,
 .languages-heading,
 .frameworks-heading,
 .skills-heading,
-li {
+li,
+h2,
+p {
   font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
@@ -144,7 +145,8 @@ li {
 }
 
 .buttons:hover {
-  background-color: #41a5a5;
+  background-color: #4fb8b8;
+  border: 2px solid #4fb8b8;
 }
 
 .button-width-class {
@@ -167,6 +169,10 @@ li {
   color: #1a2236;
 }
 
+.about-heading {
+  font-size: 50px;
+}
+
 .about-heading,
 .about,
 .cv {
@@ -179,15 +185,6 @@ li {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.cv {
-  padding: 10px;
-  background-color: #1a2236;
-  color: white;
-  border: 2px solid #1a2236;
-  margin-top: 30px;
-  font-size: 15px;
 }
 
 .skills-section {
@@ -237,4 +234,127 @@ ul {
 
 .skills {
   background-image: url(./images/skills.png);
+}
+
+.cv {
+  padding: 10px;
+  background-color: #1a2236;
+  color: white;
+  border: 2px solid #1a2236;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.cv:hover {
+  background-color: #1d0683;
+}
+
+.contact-form {
+  background-image: url(./images/background.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.geometry {
+  position: absolute;
+  left: 0;
+}
+
+.contact-heading {
+  padding: 106px 0 20px;
+  font-size: 50px;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+.contact-paragraph {
+  margin-bottom: 50px;
+}
+
+.contact-heading,
+.contact-paragraph,
+input {
+  max-width: 288px;
+  min-width: 288px;
+}
+
+textarea,
+input {
+  min-width: 285px;
+  border: 1px solid white;
+  padding: 15px 16px 0;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.input-box {
+  background-color: white;
+  border: 1px solid #dfdfe0;
+  min-width: 285px;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 10px;
+  color: #7d7c84;
+  padding: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  height: 112px;
+  border: 1px solid #dfdfe0;
+}
+
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+}
+
+.form-button {
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #1a2236;
+  color: white;
+  border: 1px solid #1a2236;
+  margin-bottom: 74px;
+}
+
+.form-button:hover {
+  background-color: #1d0683;
+}
+
+.socials {
+  background-color: #1a2236;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-resume {
+  color: #92dcdc;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.resume {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  width: 288px;
+}
+
+.socials-icons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 288px;
+  padding: 15px 0;
 }
