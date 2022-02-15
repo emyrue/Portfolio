@@ -68,17 +68,7 @@ h2 {
   height: auto;
 }
 
-.cv {
-  padding: 10px;
-  background-color: #1a2236;
-  color: white;
-  border: 2px solid #1a2236;
-  margin-top: 30px;
-  font-size: 15px;
-}
-
-.collaboration:hover,
-.cv:hover {
+.collaboration:hover {
   background-color: #1d0683;
 }
 
@@ -244,6 +234,19 @@ ul {
 
 .skills {
   background-image: url(./images/skills.png);
+}
+
+.cv {
+  padding: 10px;
+  background-color: #1a2236;
+  color: white;
+  border: 2px solid #1a2236;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.cv:hover {
+  background-color: #1d0683;
 }
 
 .contact-form {
