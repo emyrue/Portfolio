@@ -298,6 +298,10 @@ textarea {
   border: 1px solid #dfdfe0;
 }
 
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -314,12 +318,28 @@ textarea {
   margin-bottom: 74px;
 }
 
+.form-button:hover {
+  background-color: #1d0683;
+}
+
 .socials {
   background-color: #1a2236;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .get-resume {
-  color: #fff;
+  color: #92dcdc;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.resume {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  width: 288px;
 }
 
 .socials-icons {
@@ -327,4 +347,5 @@ textarea {
   list-style: none;
   justify-content: space-between;
   width: 288px;
+  padding: 15px 0;
 }
