@@ -84,7 +84,9 @@ h2 {
 .languages-heading,
 .frameworks-heading,
 .skills-heading,
-li {
+li,
+h2,
+p {
   font-family: 'Poppins', 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
@@ -246,4 +248,19 @@ ul {
 .form {
   display: flex;
   flex-direction: column;
+}
+
+.socials {
+  background-color: #1a2236;
+}
+
+.get-resume {
+  color: #fff;
+}
+
+.socials-icons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 288px;
 }
