@@ -243,6 +243,12 @@ ul {
 
 .contact-form {
   background-image: url(./images/background.png);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  width: 288px;
 }
 
 .form {
