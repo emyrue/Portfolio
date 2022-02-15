@@ -17,15 +17,13 @@ As you work your way through Microverse curriculum materials you will complete s
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/emyrue)
-- Twitter: [@twitterhandle](https://twitter.com/EmyrueRobertson)
+- GitHub: [@emyrue](https://github.com/emyrue)
+- Twitter: [@EmyrueRobertson](https://twitter.com/EmyrueRobertson)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/emily-robertson-70a2bb22a/)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle]()
-- Twitter: [@twitterhandle]()
-- LinkedIn: [LinkedIn]()
+- GitHub: [[@dewslyse](https://github.com/dewslyse)
 
 ## 🤝 Contributing
 
