@@ -394,6 +394,7 @@ textarea::placeholder {
   
   .top {
     width: 100vw;
+    height: auto;
   }
 
   .headline {
@@ -401,6 +402,7 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     width: 50vw;
+    height: auto;
   }
 
   .collaboration,
@@ -413,6 +415,7 @@ textarea::placeholder {
   .name {
     width: 484px;
     font-size: 110px;
+    margin-bottom: 70px;
   }
 
   .intro {
@@ -422,9 +425,10 @@ textarea::placeholder {
   .button-container {
     width: 484px;
   }
-  
+
   .collaboration {
     width: 288px;
+    margin-top: 70px;
   }
 
   .banner2 {
@@ -434,5 +438,7 @@ textarea::placeholder {
   .dots {
     position: absolute;
     right: 50%;
+    width: 10%;
+    height: auto;
   }
 }
