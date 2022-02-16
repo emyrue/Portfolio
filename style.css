@@ -26,7 +26,11 @@ body {
   .dots,
   .desktop-heading,
   .more-dots,
-  .semicircle {
+  .semicircle,
+  .two-squares,
+  .diamond,
+  .shapes,
+  .yellow-tear {
     display: none;
   }
 }
@@ -377,6 +381,9 @@ textarea::placeholder {
   .menu-items {
     display: flex;
     justify-content: center;
+    background-color: white;
+    width: 100vw;
+    position: fixed;
   }
 
   .top {
