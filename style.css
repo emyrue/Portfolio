@@ -390,6 +390,8 @@ textarea::placeholder {
     display: flex;
     justify-content: right;
     margin-bottom: 100px;
+    width: 100vw;
+    height: auto;
   }
 
   .menu-item {
@@ -403,17 +405,13 @@ textarea::placeholder {
     text-decoration: underline;
   }
   
-  .top {
-    width: 100vw;
-    height: auto;
-  }
-
   .headline {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     width: 50vw;
     height: auto;
+    margin-top: 100px;
   }
 
   .collaboration,
@@ -443,6 +441,7 @@ textarea::placeholder {
 
   .banner2 {
     width: 50vw;
+    margin-top: 100px;
   }
 
   .dots {
