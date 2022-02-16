@@ -613,6 +613,26 @@ textarea::placeholder {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    margin-top: 75px;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-heading {
+    font-size: 110px;
+    width: 446px;
+  }
+
+  .about {
+    font-size: 14px;
+    width: 446px;
+  }
+
+  .cv {
+    align-self: flex-start;
   }
 
   .skills-section {
