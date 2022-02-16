@@ -413,9 +413,8 @@ textarea::placeholder {
   }
   
   .name {
-    width: 484px;
     font-size: 110px;
-    margin-bottom: 70px;
+    margin: 70px 0;
   }
 
   .intro {
@@ -436,9 +435,9 @@ textarea::placeholder {
   }
 
   .dots {
-    position: absolute;
-    right: 50%;
-    width: 10%;
+    align-self: flex-end;
+    width: 20%;
     height: auto;
+    margin-top: auto;
   }
 }
