@@ -310,10 +310,6 @@ input {
   margin-bottom: 15px;
 }
 
-textarea {
-  min-width: 285px;
-}
-
 .input-box {
   background-color: white;
   border: 1px solid #dfdfe0;
@@ -329,6 +325,7 @@ label {
 }
 
 textarea {
+  min-width: 285px;
   height: 112px;
   border: 1px solid #dfdfe0;
   font-family: 'Poppins', sans-serif;
@@ -366,11 +363,12 @@ textarea::placeholder {
 .get-resume {
   color: #92dcdc;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
   margin-right: 15px;
 }
 
 .resume {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   width: 288px;
@@ -420,7 +418,7 @@ textarea::placeholder {
   .menu-item:hover {
     text-decoration: underline;
   }
-  
+
   .headline {
     flex-wrap: nowrap;
     flex-direction: column;
@@ -436,7 +434,7 @@ textarea::placeholder {
     flex-basis: auto;
     max-width: 484px;
   }
-  
+
   .name {
     font-size: 110px;
     margin: 70px 0;
@@ -445,7 +443,7 @@ textarea::placeholder {
   .intro {
     font-size: 14px;
   }
-  
+
   .button-container {
     width: 484px;
   }
@@ -478,7 +476,7 @@ textarea::placeholder {
   .project {
     display: grid;
   }
-  
+
   .project1 {
     grid-template-columns: repeat(12, 5.5555%);
     grid-column: 7/19;
@@ -569,7 +567,7 @@ textarea::placeholder {
     grid-column: 13/19;
     grid-row: 11/14;
   }
-  
+
   .computer-image6 {
     width: 33.3333vw;
     height: auto;
@@ -582,7 +580,7 @@ textarea::placeholder {
     grid-row: 12/14;
     background-color: #1a2236;
   }
-  
+
   .project2 {
     grid-column: 1/7;
     grid-row: 12/15;
@@ -699,5 +697,19 @@ textarea::placeholder {
     width: 254px;
     margin: auto;
     margin-bottom: 30px;
+  }
+
+  .resume {
+    margin: 0 20px;
+  }
+
+  .socials {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socials-icons {
+    margin: 0 20px;
   }
 }
