@@ -368,4 +368,20 @@ textarea::placeholder {
   .mobile-header {
     display: none;
   }
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-item {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 38px;
+  }
+
+  .menu-item:hover {
+    text-decoration: underline;
+  }
 }
