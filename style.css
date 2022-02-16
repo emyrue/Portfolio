@@ -378,6 +378,10 @@ textarea::placeholder {
     display: none;
   }
 
+  .header {
+    z-index: 1;
+  }
+
   .menu-items {
     display: flex;
     justify-content: center;
@@ -475,6 +479,7 @@ textarea::placeholder {
     grid-row: 1/ span 8;
     transform: rotate(-90deg);
     margin-top: 200px;
+    z-index: -1;
   }
 
   .more-dots {
@@ -602,5 +607,22 @@ textarea::placeholder {
   .project-link4,
   .project-link5 {
     display: none;
+  }
+
+  .about-and-skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .skills-section {
+    width: 578px;
+    justify-content: left;
+  }
+
+  .languages,
+  .frameworks,
+  .skills {
+    margin: 0;
   }
 }
