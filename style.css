@@ -23,7 +23,8 @@ body {
 @media only screen and (max-width: 992px) {
   .menu-items,
   .banner2,
-  .dots {
+  .dots,
+  .desktop-heading {
     display: none;
   }
 }
@@ -439,5 +440,9 @@ textarea::placeholder {
     width: 20%;
     height: auto;
     margin-top: auto;
+  }
+
+  .flex-container {
+    display: none;
   }
 }
