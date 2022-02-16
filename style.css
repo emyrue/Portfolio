@@ -33,6 +33,15 @@ body {
   .yellow-tear {
     display: none;
   }
+
+  .project-name {
+    width: 288px;
+  }
+
+  form {
+    flex-direction: column;
+    width: 288px;
+  }
 }
 
 .headline {
@@ -126,7 +135,6 @@ p {
   color: white;
   font-size: 25px;
   margin-bottom: 15px;
-  width: 288px;
 }
 
 .project-link {
@@ -286,25 +294,30 @@ ul {
 }
 
 .contact-heading,
-.contact-paragraph,
+.contact-paragraph {
+  width: 288px;
+}
+
 input {
   max-width: 288px;
-  min-width: 288px;
 }
 
 textarea,
 input {
-  min-width: 285px;
   border: 1px solid white;
   padding: 15px 16px 0;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
 
+textarea {
+  min-width: 285px;
+}
+
 .input-box {
   background-color: white;
   border: 1px solid #dfdfe0;
-  min-width: 285px;
+  max-width: 285px;
   margin-bottom: 15px;
 }
 
@@ -318,6 +331,7 @@ label {
 textarea {
   height: 112px;
   border: 1px solid #dfdfe0;
+  font-family: 'Poppins', sans-serif;
 }
 
 textarea::placeholder {
@@ -326,8 +340,6 @@ textarea::placeholder {
 
 .form {
   display: flex;
-  flex-direction: column;
-  width: 288px;
 }
 
 .form-button {
@@ -505,7 +517,7 @@ textarea::placeholder {
 
   .project-name1 {
     font-size: 60px;
-    width: 726px;
+    max-width: 726px;
   }
 
   .project-buttons1 {
@@ -651,5 +663,41 @@ textarea::placeholder {
     width: auto;
     margin-left: 100px;
     margin-top: 100px;
+  }
+
+  .contact-form {
+    width: 100vw;
+  }
+
+  .contact-heading {
+    width: 548px;
+    font-size: 110px;
+  }
+
+  .contact-paragraph {
+    width: 548px;
+    font-size: 14px;
+  }
+
+  input,
+  .input-box {
+    width: 254px;
+  }
+
+  form {
+    width: 548px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  textarea {
+    width: 548px;
+  }
+
+  .form-button {
+    width: 254px;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
