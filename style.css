@@ -22,7 +22,8 @@ body {
 
 @media only screen and (max-width: 992px) {
   .menu-items,
-  .banner2 {
+  .banner2,
+  .dots {
     display: none;
   }
 }
@@ -370,10 +371,14 @@ textarea::placeholder {
     display: none;
   }
 
-  .menu-items,
-  .top {
+  .menu-items {
     display: flex;
     justify-content: center;
+  }
+
+  .top {
+    display: flex;
+    justify-content: right;
   }
 
   .menu-item {
@@ -386,15 +391,48 @@ textarea::placeholder {
   .menu-item:hover {
     text-decoration: underline;
   }
+  
+  .top {
+    width: 100vw;
+  }
 
   .headline {
     flex-wrap: nowrap;
     flex-direction: column;
+    align-items: center;
+    width: 50vw;
   }
 
   .collaboration,
   .name,
   .intro {
     flex-basis: auto;
+    max-width: 484px;
+  }
+  
+  .name {
+    width: 484px;
+    font-size: 110px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+  
+  .button-container {
+    width: 484px;
+  }
+  
+  .collaboration {
+    width: 288px;
+  }
+
+  .banner2 {
+    width: 50vw;
+  }
+
+  .dots {
+    position: absolute;
+    right: 50%;
   }
 }
