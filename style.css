@@ -30,7 +30,8 @@ body {
   .two-squares,
   .diamond,
   .shapes,
-  .yellow-tear {
+  .yellow-tear,
+  .dots-with-teal {
     display: none;
   }
 
