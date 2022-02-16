@@ -636,7 +636,7 @@ textarea::placeholder {
   }
 
   .skills-section {
-    width: 578px;
+    width: 600px;
     justify-content: left;
   }
 
@@ -644,5 +644,12 @@ textarea::placeholder {
   .frameworks,
   .skills {
     margin: 0;
+  }
+
+  .dots-with-teal {
+    height: 200px;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 100px;
   }
 }
