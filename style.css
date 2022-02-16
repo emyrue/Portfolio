@@ -21,7 +21,8 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-  .menu-items {
+  .menu-items,
+  .banner2 {
     display: none;
   }
 }
@@ -69,8 +70,7 @@ h2 {
 }
 
 .banner {
-  flex-basis: 100vw;
-  flex-shrink: 1;
+  width: 100vw;
   height: auto;
 }
 
@@ -365,11 +365,13 @@ textarea::placeholder {
 }
 
 @media only screen and (min-width: 992px) {
-  .mobile-header {
+  .mobile-header,
+  .banner {
     display: none;
   }
 
-  .menu-items {
+  .menu-items,
+  .top {
     display: flex;
     justify-content: center;
   }
@@ -383,5 +385,16 @@ textarea::placeholder {
 
   .menu-item:hover {
     text-decoration: underline;
+  }
+
+  .headline {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .collaboration,
+  .name,
+  .intro {
+    flex-basis: auto;
   }
 }
