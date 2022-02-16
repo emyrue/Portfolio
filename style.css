@@ -366,7 +366,7 @@ textarea::placeholder {
   padding: 15px 0;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .mobile-header,
   .banner {
     display: none;
@@ -380,6 +380,7 @@ textarea::placeholder {
   .top {
     display: flex;
     justify-content: right;
+    margin-bottom: 100px;
   }
 
   .menu-item {
@@ -444,5 +445,9 @@ textarea::placeholder {
 
   .flex-container {
     display: none;
+  }
+
+  .desktop-heading {
+    font-size: 110px;
   }
 }
