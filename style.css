@@ -37,8 +37,15 @@ body {
 
   .project-name,
   .project-buttons,
-  .button-width-class {
+  .button-width-class,
+  .about-heading,
+  .about,
+  .cv {
     width: 288px;
+  }
+
+  input {
+    min-width: 288px;
   }
 
   form {
@@ -190,12 +197,6 @@ p {
 
 .about-heading {
   font-size: 50px;
-}
-
-.about-heading,
-.about,
-.cv {
-  width: 288px;
 }
 
 .about-section {
@@ -420,6 +421,8 @@ textarea::placeholder {
   .headline {
     flex-wrap: nowrap;
     flex-direction: column;
+    flex-shrink: 2;
+    flex-basis: auto;
     align-items: center;
     width: 50vw;
     height: auto;
@@ -434,7 +437,7 @@ textarea::placeholder {
   }
 
   .name {
-    font-size: 110px;
+    font-size: 90px;
     margin: 70px 0;
   }
 
@@ -453,6 +456,7 @@ textarea::placeholder {
 
   .banner2 {
     width: 50vw;
+    height: auto;
     margin-top: 100px;
   }
 
@@ -693,6 +697,10 @@ textarea::placeholder {
   input,
   .input-box {
     width: 254px;
+  }
+
+  label {
+    padding: 5px 15px;
   }
 
   form {
