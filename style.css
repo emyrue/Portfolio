@@ -57,7 +57,8 @@ body {
   }
 
   input {
-    min-width: 288px;
+    min-width: 285px;
+    max-width: 285px;
   }
 
   form {
@@ -706,12 +707,13 @@ textarea::placeholder {
   .geometry3 {
     position: absolute;
     right: 0;
-    top: 3919px;
+    bottom: 0;
     width: 200px;
   }
 
   .contact-form {
     width: 100vw;
+    position: relative;
   }
 
   .contact-heading {
