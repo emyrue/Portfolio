@@ -677,7 +677,6 @@ textarea::placeholder {
   .frameworks,
   .skills {
     margin: 0;
-    min-width: fit-content;
     width: 250px;
     height: 250px;
     flex-shrink: 1;
@@ -686,7 +685,6 @@ textarea::placeholder {
   .container1,
   .container2 {
     display: flex;
-    min-width: fit-content;
   }
 
   .dots-with-teal {
