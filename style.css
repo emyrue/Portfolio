@@ -398,16 +398,13 @@ textarea::placeholder {
     display: none;
   }
 
-  .header {
-    z-index: 100;
-  }
-
   .menu-items {
     display: flex;
     justify-content: center;
     background-color: white;
     width: 100vw;
     position: fixed;
+    z-index: 99;
   }
 
   .top {
