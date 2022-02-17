@@ -20,7 +20,7 @@ body {
   margin-right: 30px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .menu-items,
   .banner2,
   .dots,
@@ -35,7 +35,9 @@ body {
     display: none;
   }
 
-  .project-name {
+  .project-name,
+  .project-buttons,
+  .button-width-class {
     width: 288px;
   }
 
@@ -151,7 +153,6 @@ p {
 
 .project-buttons {
   display: flex;
-  width: 288px;
 }
 
 .buttons {
@@ -169,10 +170,6 @@ p {
 .buttons:hover {
   background-color: #4fb8b8;
   border: 2px solid #4fb8b8;
-}
-
-.button-width-class {
-  width: 288px;
 }
 
 .see-project {
@@ -512,15 +509,22 @@ textarea::placeholder {
     grid-row: 5/11;
     background-color: #1a2236;
     width: 66.6666vw;
+    display: flex;
+    padding-left: 5%;
   }
 
   .project-name1 {
     font-size: 60px;
-    max-width: 726px;
+    max-width: 764px;
+    align-self: stretch;
+  }
+
+  .project-button-flex {
+    align-self: stretch;
   }
 
   .project-buttons1 {
-    width: 726px;
+    max-width: 764px;
   }
 
   .buttons1 {
@@ -528,7 +532,8 @@ textarea::placeholder {
   }
 
   .button-width-class1 {
-    width: 726px;
+    max-width: 726px;
+    align-self: flex-start;
   }
 
   .semicircle {
@@ -639,7 +644,7 @@ textarea::placeholder {
 
   .about {
     font-size: 14px;
-    width: 446px;
+    max-width: 446px;
   }
 
   .cv {
@@ -655,6 +660,8 @@ textarea::placeholder {
   .frameworks,
   .skills {
     margin: 0;
+    flex-basis: auto;
+    flex-shrink: 1;
   }
 
   .dots-with-teal {
@@ -676,6 +683,11 @@ textarea::placeholder {
   .contact-paragraph {
     width: 548px;
     font-size: 14px;
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
   }
 
   input,
