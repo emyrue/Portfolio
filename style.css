@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .mobile-header {
@@ -31,7 +32,8 @@ body {
   .diamond,
   .shapes,
   .yellow-tear,
-  .dots-with-teal {
+  .dots-with-teal,
+  .geometry2 {
     display: none;
   }
 
@@ -40,8 +42,17 @@ body {
   .button-width-class,
   .about-heading,
   .about,
-  .cv {
+  .cv,
+  .languages,
+  .frameworks,
+  .skills {
     width: 288px;
+  }
+
+  .languages,
+  .frameworks,
+  .skills {
+    height: 288px;
   }
 
   input {
@@ -216,8 +227,6 @@ p {
 .languages,
 .frameworks,
 .skills {
-  width: 288px;
-  height: 288px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,14 +235,9 @@ p {
   margin-bottom: 20px;
 }
 
-.languages,
-.frameworks,
-.skills {
-  max-width: 289px;
-}
-
 .languages {
   background-image: url(./images/languages.png);
+  background-position: 100% 100%;
 }
 
 .languages-heading,
@@ -256,10 +260,12 @@ ul {
 
 .frameworks {
   background-image: url(./images/frameworks.png);
+  background-position: 100% 100%;
 }
 
 .skills {
   background-image: url(./images/skills.png);
+  background-position: 100% 100%;
 }
 
 .cv {
@@ -276,7 +282,7 @@ ul {
 }
 
 .contact-form {
-  background-image: url(./images/background.png);
+  background-color: #f9f9fa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,12 +290,11 @@ ul {
 }
 
 .geometry {
-  position: absolute;
-  left: 0;
+  margin-right: auto;
 }
 
 .contact-heading {
-  padding: 106px 0 20px;
+  padding: 75px 0 20px;
   font-size: 50px;
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
 }
@@ -394,7 +399,7 @@ textarea::placeholder {
   }
 
   .header {
-    z-index: 1;
+    z-index: 100;
   }
 
   .menu-items {
@@ -672,8 +677,16 @@ textarea::placeholder {
   .frameworks,
   .skills {
     margin: 0;
-    flex-basis: auto;
+    min-width: fit-content;
+    width: 250px;
+    height: 250px;
     flex-shrink: 1;
+  }
+
+  .container1,
+  .container2 {
+    display: flex;
+    min-width: fit-content;
   }
 
   .dots-with-teal {
@@ -681,6 +694,24 @@ textarea::placeholder {
     width: auto;
     margin-left: 100px;
     margin-top: 100px;
+  }
+
+  .geometry {
+    display: none;
+  }
+
+  .geometry2 {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    z-index: 0;
+  }
+
+  .geometry3 {
+    position: absolute;
+    right: 0;
+    top: 3919px;
+    width: 200px;
   }
 
   .contact-form {
