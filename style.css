@@ -33,7 +33,8 @@ body {
   .shapes,
   .yellow-tear,
   .dots-with-teal,
-  .geometry2 {
+  .geometry2,
+  .geometry3 {
     display: none;
   }
 
