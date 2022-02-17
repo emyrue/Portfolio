@@ -226,6 +226,12 @@ p {
   margin-bottom: 20px;
 }
 
+.languages,
+.frameworks,
+.skills {
+  max-width: 289px;
+}
+
 .languages {
   background-image: url(./images/languages.png);
 }
@@ -653,6 +659,8 @@ textarea::placeholder {
 
   .cv {
     align-self: flex-start;
+    max-width: 288px;
+    padding: 15px 50px;
   }
 
   .skills-section {
