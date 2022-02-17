@@ -20,26 +20,40 @@
     <!--Header section-->
 
     <header>
-        <nav class="header">
+        <section class="mobile-header">
             <a href="#">
                 <img class="logo" alt="Logo" src="./images/image_geometry_1.png">
             </a>
             <img class="menu" alt="Menu" src="./images/ic_menu.svg">
-        </nav>
+        </section>
+        <section class="menu-items">
+            <a class="menu-item" href="#">Hello</a>
+            <a class="menu-item" href="#">Portfolio</a>
+            <a class="menu-item" href="#">About</a>
+            <a class="menu-item" href="#">Contact</a>
+        </section>
     </header>
 
     <!--Headline section-->
 
-    <section class="headline">
-        <h1 class="name">Emily Robertson</h1>
-        <h2 class="intro">Hello! I am a software developer!
-            I can help you build a product,
-            feature or website. Take a look at my works.
-            If you like what you see and have a project
-            you need coded, don’t hesitate and contact me.
-        </h2>
-        <button class="collaboration" type="button">Start Collaboration</button>
-        <img class="banner" alt="Image" src="./images/image_geometry_2.png">
+    <section class="top">
+        <section class="headline">
+            <h1 class="name">Emily Robertson</h1>
+            <h2 class="intro">Hello! I am a software developer!
+                I can help you build a product,
+                feature or website. Take a look at my works.
+                If you like what you see and have a project
+                you need coded, don’t hesitate and contact me.
+            </h2>
+            <section class="button-container">
+                <button class="collaboration" type="button">Start Collaboration</button>
+            </section>
+            <img class="dots" alt="Dots" src="./images/dots.png">
+        </section>
+        <section class="headline-image">   
+            <img class="banner" alt="Image" src="./images/image_geometry_2.png">
+            <img class="banner2" alt="Image" src="./images/banner2.png">
+        </section>
     </section>
 
     <!--Project section-->
@@ -51,20 +65,32 @@
     <!--Grid-container for projects-->
 
     <section class="grid-container">
+        
+        <!--Project heading for desktop-->
+
+        <h1 class="desktop-heading">Projects</h1>
+        <img class="more-dots" alt="dots" src="./images/dots.png">
+        <img class="semicircle" alt="shapes" src="./images/semicircle.png">
+        <img class="two-squares" alt="shapes" src="./images/twosquares.png">
+        <img class="diamond" alt="shape" src="./images/diamond.png">
+        <img class="shapes" alt="shapes" src="./images/shapes.png">
+        <img class="yellow-tear" alt="shape" src="./images/yelllowtear.png">
 
         <!--Project 1-->
 
         <section class="project project1">
             <img class="computer-image computer-image1" alt="computer" src="./images/computer-image1.png">
-            <section class="project-link">
-                <h1 class="project-name">Project name goes here</h1>
-                <section class="project-buttons">
-                    <button class="buttons" type="button">HTML/CSS</button>
-                    <button class="buttons" type="button">Ruby on Rails</button>
-                    <button class="buttons" type="button">JavaScript</button>
+            <section class="project-link project-link1">
+                <h1 class="project-name project-name1">Project name goes here</h1>
+                <section class="project-button-flex">
+                    <section class="project-buttons project-buttons1">
+                        <button class="buttons buttons1" type="button">HTML/CSS</button>
+                        <button class="buttons buttons1" type="button">Ruby on Rails</button>
+                        <button class="buttons buttons1" type="button">JavaScript</button>
+                    </section>
                 </section>
-                <section class="button-width-class">
-                    <button class="see-project" type="button">See this project &#8594;</button>
+                <section class="button-width-class button-width-class1">
+                    <button class="see-project see-project1" type="button">See this project &#8594;</button>
                 </section>
             </section>
         </section>
@@ -73,7 +99,7 @@
 
         <section class="project project2">
             <img class="computer-image computer-image2" alt="computer" src="./images/computer-image2.png">
-            <section class="project-link">
+            <section class="project-link project-link2">
                 <h1 class="project-name">Project name goes here</h1>
                 <section class="project-buttons">
                     <button class="buttons" type="button">HTML/CSS</button>
@@ -90,7 +116,7 @@
 
         <section class="project project3">
             <img class="computer-image computer-image3" alt="computer" src="./images/computer-image3.png">
-            <section class="project-link">
+            <section class="project-link project-link3">
                 <h1 class="project-name">Project name goes here</h1>
                 <section class="project-buttons">
                     <button class="buttons" type="button">HTML/CSS</button>
@@ -107,7 +133,7 @@
 
         <section class="project project4">
             <img class="computer-image computer-image4" alt="computer" src="./images/computer-image4.png">
-            <section class="project-link">
+            <section class="project-link project-link4">
                 <h1 class="project-name">Project name goes here</h1>
                 <section class="project-buttons">
                     <button class="buttons" type="button">HTML/CSS</button>
@@ -124,7 +150,7 @@
 
         <section class="project project5">
             <img class="computer-image computer-image5" alt="computer" src="./images/computer-image5.png">
-            <section class="project-link">
+            <section class="project-link project-link5">
                 <h1 class="project-name">Project name goes here</h1>
                 <section class="project-buttons">
                     <button class="buttons" type="button">HTML/CSS</button>
@@ -141,7 +167,7 @@
 
         <section class="project project6">
             <img class="computer-image computer-image6" alt="computer" src="./images/computer-image6.png">
-            <section class="project-link">
+            <section class="project-link project-link6">
                 <h1 class="project-name">Project name goes here</h1>
                 <section class="project-buttons">
                     <button class="buttons" type="button">HTML/CSS</button>
@@ -156,49 +182,55 @@
     </section>
 
     <!--About-->
-
-    <section class="about-section">
-        <h1 class="about-heading">About</h1>
-        <p class="about">Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ea eiusmod
-        </p>
-        <button class="cv">Get my CV <i class="fa fa-download"></i></button>
-    </section>
-
-    <!--Languages, frameworks, and skills-->
-
-    <section class="skills-section">
-        <section class="languages">
-            <h1 class="languages-heading">Languages</h1>
-            <ul>
-                <li>Javascript(ES5/ES6)</li>
-                <li>Ruby</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
+    <section class="about-and-skills">
+        <section class="about-section">
+            <h1 class="about-heading">About</h1>
+            <p class="about">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ea eiusmod
+            </p>
+            <button class="cv">Get my CV <i class="fa fa-download"></i></button>
         </section>
-        <section class="frameworks">
-            <h1 class="frameworks-heading">Frameworks</h1>
-            <ul>
-                <li>Bootstrap</li>
-                <li>Ruby on rails</li>
-                <li>RSpec</li>
-                <li>Capibara</li>
-                <li>Selenium</li>
-            </ul>
-        </section>
-        <section class="skills">
-            <h1 class="skills-heading">Skills</h1>
-            <ul>
-                <li>Codekit</li>
-                <li>Codepen</li>
-                <li>Github</li>
-                <li>GitLAb</li>
-                <li>Terminal</li>
-            </ul>
+
+        <!--Languages, frameworks, and skills-->
+
+        <section class="skills-section">
+            <section class="container1">
+                <section class="languages">
+                    <h1 class="languages-heading">Languages</h1>
+                    <ul>
+                        <li>Javascript(ES5/ES6)</li>
+                        <li>Ruby</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </section>
+                <section class="frameworks">
+                    <h1 class="frameworks-heading">Frameworks</h1>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Ruby on rails</li>
+                        <li>RSpec</li>
+                        <li>Capibara</li>
+                        <li>Selenium</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="container2">
+                <section class="skills">
+                    <h1 class="skills-heading">Skills</h1>
+                    <ul>
+                        <li>Codekit</li>
+                        <li>Codepen</li>
+                        <li>Github</li>
+                        <li>GitLAb</li>
+                        <li>Terminal</li>
+                    </ul>
+                </section>
+                <img class="dots-with-teal" alt="dots" src="./images/dots_with_teal.png">
+            </section>
         </section>
     </section>
 
@@ -207,11 +239,14 @@
     <footer>
         <section class="contact-form">
             <img alt="Logo" class="geometry" src="./images/image_geometry_1.png">
+            <img alt="Logo" class="geometry2" src="./images/contact-top-left.png">
+            <img alt="Shapes" class="geometry3" src="./images/contact-bottom-right.png">
             <h2 class="contact-heading">Get started</h2>
-            <p class="contact-paragraph">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt
-                ut labore et dolore magna.</p>
+            <p class="contact-paragraph">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                ea commodo consequat. </p>
             <form class="form" action="https://formspree.io/f/mjvlwyao" method="POST">
                 <div class="input-box">
                     <label for="name">Your Name</label>
