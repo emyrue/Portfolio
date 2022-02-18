@@ -87,6 +87,19 @@ h2 {
   font-size: 50px;
   flex-basis: 288px;
   flex-shrink: 1;
+  animation-name: name-fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1; 
+}
+
+@keyframes name-fade-in {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
 }
 
 .intro {
@@ -116,6 +129,7 @@ h2 {
 
 .collaboration:hover {
   background-color: #1d0683;
+  transition: background-color 2s 0s;
 }
 
 .about-heading,
@@ -205,7 +219,9 @@ p {
 
 .see-project:hover {
   background-color: white;
+  transition: background-color 2s;
   color: #1a2236;
+  transition: color 2s;
 }
 
 .about-heading {
@@ -281,6 +297,7 @@ ul {
 
 .cv:hover {
   background-color: #1d0683;
+  transition: background-color 2s 0s;
 }
 
 .contact-form {
@@ -770,34 +787,4 @@ textarea::placeholder {
   .socials-icons {
     margin: 0 20px;
   }
-}
-
-/* Animations and transitions*/
-
-.name {
-  animation-name: name-fade-in;
-  animation-duration: 2s;
-  animation-iteration-count: 1; 
-}
-
-.collaboration:hover {
-  background-color: #1d0683;
-  transition: background-color 2s 0s;
-}
-
-@keyframes name-fade-in {
-  from {
-    opacity: 0;
-  }
-  
-  to {
-    opacity: 1;
-  }
-}
-
-.see-project:hover {
-  color: #1a2236;
-  transition: color 2s;
-  background-color: #fff;
-  transition: background-color 2s;
 }
