@@ -771,3 +771,27 @@ textarea::placeholder {
     margin: 0 20px;
   }
 }
+
+/* Animations and transitions*/
+
+.name {
+  animation-name: name-fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1; 
+}
+
+.collaboration:hover {
+  background-color: #1d0683;
+  transition: background-color 2s 0s;
+}
+
+@keyframes name-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
