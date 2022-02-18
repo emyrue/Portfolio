@@ -789,9 +789,15 @@ textarea::placeholder {
   from {
     opacity: 0;
   }
-
+  
   to {
     opacity: 1;
   }
 }
 
+.see-project:hover {
+  color: #1a2236;
+  transition: color 2s;
+  background-color: #fff;
+  transition: background-color 2s;
+}
