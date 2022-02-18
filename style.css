@@ -38,7 +38,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 424px) {
   .menu-items {
     display: none;
   }
@@ -415,7 +415,13 @@ textarea::placeholder {
   padding: 15px 0;
 }
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 425px) and (max-width: 991px) {
+  .headline {
+    margin-left: 12vw;
+  }
+}
+
+@media only screen and (min-width: 425px) {
   .mobile-header{
     display: none;
   } 
@@ -451,9 +457,27 @@ textarea::placeholder {
     margin-top: 100px;
   }
 
+  .intro {
+    flex-basis: auto;
+  }
+
   .name {
     font-size: 60px;
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+
+  .languages,
+  .frameworks,
+  .skills {
     margin: 0;
+    width: 250px;
+    height: 250px;
+    flex-shrink: 1;
+  }
+
+  .collaboration {
+    margin-top: 20px;
   }
 }
 
@@ -702,15 +726,6 @@ textarea::placeholder {
   .skills-section {
     width: 600px;
     justify-content: left;
-  }
-
-  .languages,
-  .frameworks,
-  .skills {
-    margin: 0;
-    width: 250px;
-    height: 250px;
-    flex-shrink: 1;
   }
 
   .container1,
