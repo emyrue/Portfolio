@@ -89,14 +89,14 @@ h2 {
   flex-shrink: 1;
   animation-name: name-fade-in;
   animation-duration: 2s;
-  animation-iteration-count: 1; 
+  animation-iteration-count: 1;
 }
 
 @keyframes name-fade-in {
   from {
     opacity: 0;
   }
-  
+
   to {
     opacity: 1;
   }
@@ -219,9 +219,8 @@ p {
 
 .see-project:hover {
   background-color: white;
-  transition: background-color 2s;
+  transition: background-color 2s, color 2s;
   color: #1a2236;
-  transition: color 2s;
 }
 
 .about-heading {
