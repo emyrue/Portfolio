@@ -427,9 +427,9 @@ textarea::placeholder {
 }
 
 @media only screen and (min-width: 425px) {
-  .mobile-header{
+  .mobile-header {
     display: none;
-  } 
+  }
 
   .menu-items {
     display: flex;
