@@ -41,10 +41,6 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
-## Link
-
-- [Link to site](https://emyrue.github.io/Portfolio/)
-
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
