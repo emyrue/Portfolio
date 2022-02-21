@@ -22,7 +22,6 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
-  .menu-items,
   .banner2,
   .dots,
   .desktop-heading,
@@ -35,6 +34,12 @@ body {
   .dots-with-teal,
   .geometry2,
   .geometry3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .menu-items {
     display: none;
   }
 
@@ -73,7 +78,7 @@ body {
   padding: 6px;
   align-items: center;
   justify-content: center;
-  max-width: 100vw;
+  width: 100vw;
 }
 
 h1,
@@ -410,9 +415,19 @@ textarea::placeholder {
   padding: 15px 0;
 }
 
-@media (min-width: 992px) {
-  .mobile-header,
-  .banner {
+@media only screen and (min-width: 425px) and (max-width: 991px) {
+  .headline {
+    margin-left: 12vw;
+  }
+
+  form {
+    flex-direction: column;
+    width: 288px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .mobile-header {
     display: none;
   }
 
@@ -422,15 +437,8 @@ textarea::placeholder {
     background-color: white;
     width: 100vw;
     position: fixed;
+    top: 0;
     z-index: 99;
-  }
-
-  .top {
-    display: flex;
-    justify-content: right;
-    margin-bottom: 100px;
-    width: 100vw;
-    height: auto;
   }
 
   .menu-item {
@@ -450,9 +458,46 @@ textarea::placeholder {
     flex-shrink: 2;
     flex-basis: auto;
     align-items: center;
-    width: 50vw;
-    height: auto;
+    width: 75vw;
     margin-top: 100px;
+  }
+
+  .intro {
+    flex-basis: auto;
+  }
+
+  .name {
+    font-size: 60px;
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+
+  .languages,
+  .frameworks,
+  .skills {
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    flex-shrink: 1;
+  }
+
+  .collaboration {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-header,
+  .banner {
+    display: none;
+  }
+
+  .top {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 100px;
+    width: 100vw;
+    height: auto;
   }
 
   .collaboration,
@@ -686,15 +731,6 @@ textarea::placeholder {
   .skills-section {
     width: 600px;
     justify-content: left;
-  }
-
-  .languages,
-  .frameworks,
-  .skills {
-    margin: 0;
-    width: 250px;
-    height: 250px;
-    flex-shrink: 1;
   }
 
   .container1,
