@@ -419,6 +419,11 @@ textarea::placeholder {
   .headline {
     margin-left: 12vw;
   }
+
+  form {
+    flex-direction: column;
+    width: 288px;
+  }
 }
 
 @media only screen and (min-width: 425px) {
