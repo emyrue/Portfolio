@@ -25,6 +25,10 @@ As you work your way through Microverse curriculum materials you will complete s
 
 - GitHub: [@dewslyse](https://github.com/dewslyse)
 
+👤 **Author3**
+
+- GitHub: [@Have-Samuel](https://github.com/Have-Samuel)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
