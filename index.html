@@ -24,7 +24,6 @@
 
     gtag('config', 'UA-221116073-1');
     </script>
-
 </head>
 <body>
 
@@ -35,19 +34,32 @@
             <a href="#">
                 <img class="logo" alt="Logo" src="./images/image_geometry_1.png">
             </a>
-            <img class="menu" alt="Menu" src="./images/ic_menu.svg">
+            <img class="menu" alt="Menu" src="./images/hamburger.png">
+            <div class="menu-open">
+                <div class="menu-header">
+                    <img class="menu-top-image" alt="" src="./images/menu-top-image.png">
+                    <img class="close" alt="close" src="./images/close.png">
+                </div>
+                <ul class="mobile-menu">
+                    <li class="mobile-menu-item"><a href="#top">Hello</a></li>
+                    <li class="mobile-menu-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="mobile-menu-item"><a href="#about">About</a></li>
+                    <li class="mobile-menu-item"><a href="#contact">Contact</a></li>
+                </ul>
+                <img class="menu-bottom" alt="" src="./images/menu-bottom.png">
+            </div>
         </section>
         <section class="menu-items">
-            <a class="menu-item" href="#">Hello</a>
-            <a class="menu-item" href="#">Portfolio</a>
-            <a class="menu-item" href="#">About</a>
-            <a class="menu-item" href="#">Contact</a>
+            <a class="menu-item" href="#top">Hello</a>
+            <a class="menu-item" href="#portfolio">Portfolio</a>
+            <a class="menu-item" href="#about">About</a>
+            <a class="menu-item" href="#contact">Contact</a>
         </section>
     </header>
 
     <!--Headline section-->
 
-    <section class="top">
+    <section class="top" id="top">
         <section class="headline">
             <h1 class="name">Emily Robertson</h1>
             <h2 class="intro">Hello! I am a software developer!
@@ -75,7 +87,7 @@
 
     <!--Grid-container for projects-->
 
-    <section class="grid-container">
+    <section class="grid-container" id="portfolio">
         
         <!--Project heading for desktop-->
 
@@ -193,7 +205,7 @@
     </section>
 
     <!--About-->
-    <section class="about-and-skills">
+    <section class="about-and-skills" id="about">
         <section class="about-section">
             <h2 class="about-heading">About</h2>
             <p class="about">Lorem ipsum dolor sit amet, consectetur
@@ -212,20 +224,20 @@
                 <section class="languages">
                     <h2 class="languages-heading">Languages</h2>
                     <ul>
-                        <li>Javascript(ES5/ES6)</li>
-                        <li>Ruby</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                        <li class="skills-list">Javascript(ES5/ES6)</li>
+                        <li class="skills-list">Ruby</li>
+                        <li class="skills-list">HTML</li>
+                        <li class="skills-list">CSS</li>
                     </ul>
                 </section>
                 <section class="frameworks">
                     <h2 class="frameworks-heading">Frameworks</h2>
                     <ul>
-                        <li>Bootstrap</li>
-                        <li>Ruby on rails</li>
-                        <li>RSpec</li>
-                        <li>Capibara</li>
-                        <li>Selenium</li>
+                        <li class="skills-list">Bootstrap</li>
+                        <li class="skills-list">Ruby on rails</li>
+                        <li class="skills-list">RSpec</li>
+                        <li class="skills-list">Capibara</li>
+                        <li class="skills-list">Selenium</li>
                     </ul>
                 </section>
             </section>
@@ -233,11 +245,11 @@
                 <section class="skills">
                     <h2 class="skills-heading">Skills</h2>
                     <ul>
-                        <li>Codekit</li>
-                        <li>Codepen</li>
-                        <li>Github</li>
-                        <li>GitLAb</li>
-                        <li>Terminal</li>
+                        <li class="skills-list">Codekit</li>
+                        <li class="skills-list">Codepen</li>
+                        <li class="skills-list">Github</li>
+                        <li class="skills-list">GitLAb</li>
+                        <li class="skills-list">Terminal</li>
                     </ul>
                 </section>
                 <img class="dots-with-teal" alt="dots" src="./images/dots_with_teal.png">
@@ -248,7 +260,7 @@
     <!--Form-->
 
     <footer>
-        <section class="contact-form">
+        <section class="contact-form" id="contact">
             <img alt="Logo" class="geometry" src="./images/image_geometry_1.png">
             <img alt="Logo" class="geometry2" src="./images/contact-top-left.png">
             <img alt="Shapes" class="geometry3" src="./images/contact-bottom-right.png">
@@ -320,6 +332,7 @@
             </ul>
         </section>
     </footer>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
