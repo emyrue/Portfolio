@@ -13,6 +13,15 @@ As you work your way through Microverse curriculum materials you will complete s
 - CSS
 - Linter
 
+## Getting Started
+
+To get a local copy up and running follow these simple steps: 
+1. Open your terminal and navigate to the folder you would like to put these files.
+2. Type these commands into the terminal: 
+ - git clone https://github.com/emyrue/Portfolio.git
+ - cd Portfolio
+ - open index.html
+
 ## Authors
 
 👤 **Author1**
