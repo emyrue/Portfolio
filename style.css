@@ -39,8 +39,46 @@ body {
 }
 
 @media only screen and (max-width: 424px) {
-  .menu-items {
+  .menu-items,
+  .menu-open {
     display: none;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    top: 0;
+  }
+
+  .menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .menu-top-image {
+    width: 75vw;
+    height: auto;
+  }
+
+  .close {
+    margin-right: 30px;
+  }
+
+  .mobile-menu {
+    padding: 0;
+  }
+
+  .mobile-menu-item {
+    color: black;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
   }
 
   .project-name,
@@ -266,7 +304,7 @@ p {
 .languages-heading,
 .frameworks-heading,
 .skills-heading,
-li {
+.skills-list {
   color: white;
 }
 
