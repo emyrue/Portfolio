@@ -47,10 +47,12 @@ body {
   .show {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     background-color: white;
     top: 0;
+    height: 100%;
   }
 
   .menu-header {
@@ -79,6 +81,16 @@ body {
     text-align: center;
     font-size: 20px;
     padding: 20px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu-bottom {
+    width: 100vw;
+    height: auto;
   }
 
   .project-name,
