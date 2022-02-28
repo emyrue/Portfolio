@@ -9,6 +9,6 @@ function display() {
 
 closeButton.addEventListener('click', display);
 hamburger.addEventListener('click', display);
-for (let i = 0; i < mobileItem.length; i++) {
+for (let i = 0; i < mobileItem.length; i += 1) {
   mobileItem[i].addEventListener('click', display);
 }
