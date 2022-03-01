@@ -105,6 +105,35 @@ body {
     width: 288px;
   }
 
+  .popup {
+    margin: 10px;
+  }
+
+  .popup-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  .popup-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .popup-list-item {
+    border: 2px solid #7d7c84;
+    color: #7d7c84;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .popup-list-item2 {
+    min-width: 100px;
+  }
+  
   .languages,
   .frameworks,
   .skills {
