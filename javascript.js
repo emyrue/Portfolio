@@ -46,6 +46,11 @@ let listItem3 = document.createElement('li');
 let slideshow = document.createElement('div');
 let arrowLeft = document.createElement('img');
 let arrowRight = document.createElement('img');
+let slides = document.createElement('div');
+let image1 = document.createElement('img');
+let image2 = document.createElement('img');
+let image3 = document.createElement('img');
+let image4 = document.createElement('img');
 
 section.classList.add('default', 'popup');
 xIcon.className = 'close-icon';
@@ -57,6 +62,11 @@ listItem3.classList.add('popup-list-item', 'popup-list-item3');
 slideshow.className = 'slideshow';
 arrowLeft.className = 'arrow';
 arrowRight.className = 'arrow';
+slides.className = 'slides';
+image1.className = 'slide';
+image2.className = 'slide';
+image3.className = 'slide';
+image4.className = 'slide';
 
 xIcon.src = project.closePopup;
 heading.textContent = project.name;
@@ -65,6 +75,10 @@ listItem2.textContent = project.item2;
 listItem3.textContent = project.item3;
 arrowLeft.src = project.leftArrow;
 arrowRight.src = project.rightArrow;
+image1.src = project.imageURL;
+image2.src = project.imageURL;
+image3.src = project.imageURL;
+image4.src = project.imageURL;
 
 document.body.appendChild(section);
 section.appendChild(xIcon);
