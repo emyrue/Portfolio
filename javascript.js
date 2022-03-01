@@ -19,7 +19,8 @@ let project = {
     'consectetur adipiscing elit, sed do eiusmod ' +
     'tempor incididunt ut labore et dolore magna ' + 
     'aliqua. Ut enim ad minim veniam, quis nostrud ' + 
-    'exercitation ullamco laboris nisi Ut aliquip ' + 
+    'exercitation ullamco laboris nisi',
+    description2: 'Ut aliquip ' + 
     'ex ea commodo consequat.  Lorem ipsum dolor ' + 
     'sit amet, consectetur adipiscing elit, sed do ' + 
     'eiusmod tempor incididunt ut labore et dolore ' + 
@@ -51,6 +52,8 @@ let image1 = document.createElement('img');
 let image2 = document.createElement('img');
 let image3 = document.createElement('img');
 let image4 = document.createElement('img');
+let paragraph1 = document.createElement('p');
+let paragraph2 = document.createElement('p');
 
 section.classList.add('default', 'popup');
 xIcon.className = 'close-icon';
@@ -67,6 +70,8 @@ image1.className = 'slide';
 image2.className = 'slide';
 image3.className = 'slide';
 image4.className = 'slide';
+paragraph1.className = 'about-project';
+paragraph2.className = 'about-project';
 
 xIcon.src = project.closePopup;
 heading.textContent = project.name;
@@ -79,6 +84,8 @@ image1.src = project.imageURL;
 image2.src = project.imageURL;
 image3.src = project.imageURL;
 image4.src = project.imageURL;
+paragraph1.textContent = project.description;
+paragraph2.textContent = project.description2;
 
 document.body.appendChild(section);
 section.appendChild(xIcon);
@@ -95,3 +102,5 @@ slides.appendChild(image1);
 slides.appendChild(image2);
 slides.appendChild(image3);
 slides.appendChild(image4);
+section.appendChild(paragraph1);
+section.appendChild(paragraph2);
