@@ -142,7 +142,7 @@ body {
 
   .slideshow {
     background-image: url('./images/computer-image2.png');
-    background-size: 97%;
+    background-size: calc(100% - 20px);
     height: 190px;
     background-repeat: no-repeat;
     display: flex;
@@ -160,11 +160,11 @@ body {
   }
 
   .slide {
-    width: 24.25%;
+    width: calc(25% - 5px);
   }
 
   .about-project {
-    width: 97%;
+    width: calc(100% - 20px);
     font-size: 18px;
   }
 
