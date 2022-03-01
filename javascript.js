@@ -90,3 +90,8 @@ list.appendChild(listItem2);
 list.appendChild(listItem3);
 slideshow.appendChild(arrowLeft);
 slideshow.appendChild(arrowRight);
+section.appendChild(slides);
+slides.appendChild(image1);
+slides.appendChild(image2);
+slides.appendChild(image3);
+slides.appendChild(image4);

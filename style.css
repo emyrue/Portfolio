@@ -154,6 +154,14 @@ body {
   .arrow {
     margin-right: 10px;
   }
+
+  .slides {
+    display:flex;
+  }
+
+  .slide {
+    width: 24.25%;
+  }
   .languages,
   .frameworks,
   .skills {
