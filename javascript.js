@@ -25,36 +25,54 @@ let project = {
     'eiusmod tempor incididunt ut labore et dolore ' + 
     'magna aliqua. Ut enim ad minim veniam, quis ' + 
     'nostrud exercitation ullamco laboris nisi.',
+    closePopup: './images/close2.png',
+    leftArrow: './images/left-arrow.png',
+    rightArrow: './images/right-arrow.png',
     item1: 'HTML/CSS',
     item2: 'Ruby on Rails',
     item3: 'JavaScript',
-    imageURL: './image/computer-image1.png',
+    imageURL: './images/computer-image2.png',
     liveVersionLink: 'https://emyrue.github.io/Portfolio',
     sourceLink: 'https://github.com/emyrue/Portfolio/'
 }
 
 let section = document.createElement('section');
+let xIcon = document.createElement('img');
 let heading = document.createElement('h2');
 let list = document.createElement('ul');
 let listItem1 = document.createElement('li');
 let listItem2 = document.createElement('li');
 let listItem3 = document.createElement('li');
+let slideshow = document.createElement('div');
+let arrowLeft = document.createElement('img');
+let arrowRight = document.createElement('img');
 
 section.classList.add('default', 'popup');
+xIcon.className = 'close-icon';
 heading.className = 'popup-heading';
 list.className = 'popup-list';
 listItem1.classList.add('popup-list-item', 'popup-list-item1');
 listItem2.classList.add('popup-list-item', 'popup-list-item2');
 listItem3.classList.add('popup-list-item', 'popup-list-item3');
+slideshow.className = 'slideshow';
+arrowLeft.className = 'arrow';
+arrowRight.className = 'arrow';
 
+xIcon.src = project.closePopup;
 heading.textContent = project.name;
 listItem1.textContent = project.item1;
 listItem2.textContent = project.item2;
 listItem3.textContent = project.item3;
+arrowLeft.src = project.leftArrow;
+arrowRight.src = project.rightArrow;
 
 document.body.appendChild(section);
+section.appendChild(xIcon);
 section.appendChild(heading);
 section.appendChild(list);
+section.appendChild(slideshow);
 list.appendChild(listItem1);
 list.appendChild(listItem2);
 list.appendChild(listItem3);
+slideshow.appendChild(arrowLeft);
+slideshow.appendChild(arrowRight);

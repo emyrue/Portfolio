@@ -109,9 +109,15 @@ body {
     margin: 10px;
   }
 
+  .close-icon {
+    float: right;
+    margin-right: 20px;
+  }
+
   .popup-heading {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    margin-top: 30px;
   }
 
   .popup-list {
@@ -133,7 +139,21 @@ body {
   .popup-list-item2 {
     min-width: 100px;
   }
-  
+
+  .slideshow {
+    background-image: url('./images/computer-image2.png');
+    background-size: 97%;
+    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 97vw;
+  }
+
+  .arrow {
+    margin-right: 10px;
+  }
   .languages,
   .frameworks,
   .skills {
