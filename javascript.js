@@ -40,7 +40,7 @@ const project = {
   next: './images/next.png',
   previous: './images/previous.png',
   liveVersionLink: 'https://emyrue.github.io/Portfolio',
-  sourceLink: 'https://github.com/emyrue/Portfolio/'
+  sourceLink: 'https://github.com/emyrue/Portfolio/',
 };
 
 const section = document.createElement('section');
