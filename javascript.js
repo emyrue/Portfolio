@@ -101,3 +101,26 @@ for (let m = 0; m < seeProject.length; m += 1) {
 }
 
 xIcon.addEventListener('click', display2);
+
+const form = document.getElementById('form');
+const small = document.getElementsByTagName('small')[0];
+function validateEmail(input) {
+  let email = input.toString();
+
+  if (email === email.toLowerCase()) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+form.addEventListener('submit', (event) => {
+  if(validateEmail) {
+    small.textContent = '';
+  }
+  else {
+    small.textContent = 'Please enter your email address without capital letters.';
+    event.preventDefault();
+  }
+})
