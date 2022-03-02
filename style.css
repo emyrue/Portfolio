@@ -10,6 +10,10 @@ body {
   width: 100vw;
 }
 
+.default {
+  display: none;
+}
+
 .logo {
   width: 111px;
   height: 74px;
@@ -34,6 +38,106 @@ body {
   .dots-with-teal,
   .geometry2,
   .geometry3 {
+    display: none;
+  }
+
+  .popup {
+    padding: 10px;
+    display: block;
+    position: fixed;
+    top: 0;
+    background: white;
+    max-height: 100%;
+    overflow-y: scroll;
+    z-index: 99;
+    width: 100vw;
+  }
+
+  .close-icon {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  .popup-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  .popup-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .popup-list-item {
+    border: 2px solid #7d7c84;
+    color: #7d7c84;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .popup-list-item2 {
+    min-width: 100px;
+  }
+
+  .slideshow {
+    background-image: url('./images/computer-image2.png');
+    background-size: calc(100% - 20px);
+    height: 45vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrow {
+    margin-right: 30px;
+  }
+
+  .slides {
+    display: flex;
+  }
+
+  .slide {
+    width: calc(25% - 5px);
+  }
+
+  .about-project {
+    width: calc(100% - 20px);
+    font-size: 18px;
+  }
+
+  .popup-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .live-source-buttons {
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-color: #1a2236;
+    margin: 10px;
+  }
+
+  .live-source-span {
+    color: #1a2236;
+    font-size: 20px;
+  }
+
+  .live-image {
+    position: absolute;
+    right: 10px;
+  }
+
+  .next-previous {
     display: none;
   }
 }
@@ -525,6 +629,120 @@ textarea::placeholder {
 }
 
 @media (min-width: 992px) {
+  .popup {
+    padding: 50px;
+    border: 50px solid #1a2236;
+    display: block;
+    position: fixed;
+    top: 0;
+    background: white;
+    max-height: 100%;
+    overflow-y: scroll;
+    z-index: 99;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+
+  .close-icon {
+    float: right;
+  }
+
+  .popup-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .popup-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .popup-list-item {
+    border: 2px solid #7d7c84;
+    color: #7d7c84;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .popup-list-item2 {
+    min-width: 100px;
+  }
+
+  .slideshow {
+    background-image: url('./images/computer-image2.png');
+    background-size: calc(100% - 20px);
+    height: 45vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrow {
+    margin-right: 30px;
+  }
+
+  .slides {
+    display: flex;
+  }
+
+  .slide {
+    width: calc(25% - 5px);
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-project {
+    max-width: 600px;
+    font-size: 18px;
+  }
+
+  .popup-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .live-source-buttons {
+    position: relative;
+    flex-basis: 300px;
+    padding: 10px;
+    background-color: white;
+    border-color: #1a2236;
+    margin: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .live-source-span {
+    color: #1a2236;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .live-image {
+    position: absolute;
+    right: 10px;
+  }
+
+  .next-previous {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
   .mobile-header,
   .banner {
     display: none;
