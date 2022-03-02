@@ -13,19 +13,19 @@ for (let i = 0; i < mobileItem.length; i += 1) {
   mobileItem[i].addEventListener('click', display);
 }
 
-let project = {
+const project = {
   name: 'Project name goes here',
-  description: 'Lorem ipsum dolor sit amet,' + 
-  'consectetur adipiscing elit, sed do eiusmod ' +
-  'tempor incididunt ut labore et dolore magna ' + 
-  'aliqua. Ut enim ad minim veniam, quis nostrud ' + 
-  'exercitation ullamco laboris nisi',
-  description2: 'Ut aliquip ' + 
-  'ex ea commodo consequat.  Lorem ipsum dolor ' + 
-  'sit amet, consectetur adipiscing elit, sed do ' + 
-  'eiusmod tempor incididunt ut labore et dolore ' + 
-  'magna aliqua. Ut enim ad minim veniam, quis ' + 
-  'nostrud exercitation ullamco laboris nisi.',
+  description: 'Lorem ipsum dolor sit amet,'
+  + 'consectetur adipiscing elit, sed do eiusmod '
+  + 'tempor incididunt ut labore et dolore magna '
+  + 'aliqua. Ut enim ad minim veniam, quis nostrud '
+  + 'exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip '
+  + 'ex ea commodo consequat.  Lorem ipsum dolor '
+  + 'sit amet, consectetur adipiscing elit, sed do '
+  + 'eiusmod tempor incididunt ut labore et dolore '
+  + 'magna aliqua. Ut enim ad minim veniam, quis '
+  + 'nostrud exercitation ullamco laboris nisi.',
   closePopup: './images/close2.png',
   leftArrow: './images/left-arrow.png',
   rightArrow: './images/right-arrow.png',
@@ -43,37 +43,37 @@ let project = {
   sourceLink: 'https://github.com/emyrue/Portfolio/'
 }
 
-let section = document.createElement('section');
-let xIcon = document.createElement('img');
-let heading = document.createElement('h2');
-let list = document.createElement('ul');
-let listItem1 = document.createElement('li');
-let listItem2 = document.createElement('li');
-let listItem3 = document.createElement('li');
-let slideshow = document.createElement('div');
-let arrowLeft = document.createElement('img');
-let arrowRight = document.createElement('img');
-let slides = document.createElement('div');
-let image1 = document.createElement('img');
-let image2 = document.createElement('img');
-let image3 = document.createElement('img');
-let image4 = document.createElement('img');
-let flexContainer = document.createElement('div');
-let paragraph1 = document.createElement('p');
-let paragraph2 = document.createElement('p');
-let buttons = document.createElement('div');
-let button1 = document.createElement('button');
-let link1 = document.createElement('a');
-let span1 = document.createElement('span');
-let liveImage = document.createElement('img');
-let button2 = document.createElement('button');
-let link2 = document.createElement('a');
-let span2 = document.createElement('span');
-let sourceImage = document.createElement('img');
-let seeProject = document.querySelectorAll('.see-project');
-let nextPrevious = document.createElement('div');
-let previous = document.createElement('img');
-let next = document.createElement('img');
+const section = document.createElement('section');
+const xIcon = document.createElement('img');
+const heading = document.createElement('h2');
+const list = document.createElement('ul');
+const listItem1 = document.createElement('li');
+const listItem2 = document.createElement('li');
+const listItem3 = document.createElement('li');
+const slideshow = document.createElement('div');
+const arrowLeft = document.createElement('img');
+const arrowRight = document.createElement('img');
+const slides = document.createElement('div');
+const image1 = document.createElement('img');
+const image2 = document.createElement('img');
+const image3 = document.createElement('img');
+const image4 = document.createElement('img');
+const flexContainer = document.createElement('div');
+const paragraph1 = document.createElement('p');
+const paragraph2 = document.createElement('p');
+const buttons = document.createElement('div');
+const button1 = document.createElement('button');
+const link1 = document.createElement('a');
+const span1 = document.createElement('span');
+const liveImage = document.createElement('img');
+const button2 = document.createElement('button');
+const link2 = document.createElement('a');
+const span2 = document.createElement('span');
+const sourceImage = document.createElement('img');
+const seeProject = document.querySelectorAll('.see-project');
+const nextPrevious = document.createElement('div');
+const previous = document.createElement('img');
+const next = document.createElement('img');
 
 section.className = 'default';
 xIcon.className = 'close-icon';
@@ -161,8 +161,8 @@ function display2() {
   section.classList.toggle('popup');
 }
 
-for (i = 0; i < seeProject.length; i += 1) {
-  seeProject[i].addEventListener('click', display2);
+for (let m = 0; m < seeProject.length; m += 1) {
+  seeProject[m].addEventListener('click', display2);
 }
 
 xIcon.addEventListener('click', display2);

@@ -99,7 +99,7 @@ body {
   }
 
   .slides {
-    display:flex;
+    display: flex;
   }
 
   .slide {
@@ -685,7 +685,7 @@ textarea::placeholder {
   }
 
   .slides {
-    display:flex;
+    display: flex;
   }
 
   .slide {
