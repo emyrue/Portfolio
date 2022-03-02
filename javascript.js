@@ -32,6 +32,10 @@ let project = {
     item1: 'HTML/CSS',
     item2: 'Ruby on Rails',
     item3: 'JavaScript',
+    live: 'See live',
+    source: 'See source',
+    liveImage: './images/live.png',
+    sourceImage: './images/source.png',
     imageURL: './images/computer-image2.png',
     liveVersionLink: 'https://emyrue.github.io/Portfolio',
     sourceLink: 'https://github.com/emyrue/Portfolio/'
@@ -52,10 +56,21 @@ let image1 = document.createElement('img');
 let image2 = document.createElement('img');
 let image3 = document.createElement('img');
 let image4 = document.createElement('img');
+let flexContainer = document.createElement('div');
 let paragraph1 = document.createElement('p');
 let paragraph2 = document.createElement('p');
+let buttons = document.createElement('div');
+let button1 = document.createElement('button');
+let link1 = document.createElement('a');
+let span1 = document.createElement('span');
+let liveImage = document.createElement('img');
+let button2 = document.createElement('button');
+let link2 = document.createElement('a');
+let span2 = document.createElement('span');
+let sourceImage = document.createElement('img');
+let seeProject = document.querySelectorAll('.see-project');
 
-section.classList.add('default', 'popup');
+section.className = 'default';
 xIcon.className = 'close-icon';
 heading.className = 'popup-heading';
 list.className = 'popup-list';
@@ -70,8 +85,16 @@ image1.className = 'slide';
 image2.className = 'slide';
 image3.className = 'slide';
 image4.className = 'slide';
+flexContainer.className = 'center';
 paragraph1.className = 'about-project';
 paragraph2.className = 'about-project';
+buttons.className = 'popup-buttons';
+button1.className = 'live-source-buttons';
+span1.className = 'live-source-span';
+liveImage.className = 'live-image';
+button2.className = 'live-source-buttons';
+span2.className = 'live-source-span';
+sourceImage.className = 'live-image';
 
 xIcon.src = project.closePopup;
 heading.textContent = project.name;
@@ -86,6 +109,12 @@ image3.src = project.imageURL;
 image4.src = project.imageURL;
 paragraph1.textContent = project.description;
 paragraph2.textContent = project.description2;
+link1.href = project.liveVersionLink;
+span1.textContent = project.live;
+liveImage.src = project.liveImage;
+link2.href = project.sourceLink;
+span2.textContent = project.source;
+sourceImage.src = project.sourceImage;
 
 document.body.appendChild(section);
 section.appendChild(xIcon);
@@ -102,5 +131,25 @@ slides.appendChild(image1);
 slides.appendChild(image2);
 slides.appendChild(image3);
 slides.appendChild(image4);
-section.appendChild(paragraph1);
-section.appendChild(paragraph2);
+section.appendChild(flexContainer);
+flexContainer.appendChild(paragraph1);
+flexContainer.appendChild(paragraph2);
+section.appendChild(buttons);
+buttons.appendChild(button1);
+button1.appendChild(link1);
+link1.appendChild(span1);
+link1.appendChild(liveImage);
+buttons.appendChild(button2);
+button2.appendChild(link2);
+link2.appendChild(span2);
+link2.appendChild(sourceImage);
+
+function display2() {
+    section.classList.toggle('popup');
+}
+
+for (i = 0; i < seeProject.length; i += 1) {
+    seeProject[i].addEventListener('click', display2);
+}
+
+xIcon.addEventListener('click', display2);
