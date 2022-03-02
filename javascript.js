@@ -44,118 +44,9 @@ const project = [{
 }];
 
 const section = document.createElement('section');
-const xIcon = document.createElement('img');
-//const heading = document.createElement('h2');
-//const list = document.createElement('ul');
-//const listItem1 = document.createElement('li');
-//const listItem2 = document.createElement('li');
-//const listItem3 = document.createElement('li');
-//const slideshow = document.createElement('div');
-const arrowLeft = document.createElement('img');
-const arrowRight = document.createElement('img');
-const slides = document.createElement('div');
-const image1 = document.createElement('img');
-const image2 = document.createElement('img');
-const image3 = document.createElement('img');
-const image4 = document.createElement('img');
-const flexContainer = document.createElement('div');
-const paragraph1 = document.createElement('p');
-const paragraph2 = document.createElement('p');
-const buttons = document.createElement('div');
-const button1 = document.createElement('button');
-const link1 = document.createElement('a');
-const span1 = document.createElement('span');
-const liveImage = document.createElement('img');
-const button2 = document.createElement('button');
-const link2 = document.createElement('a');
-const span2 = document.createElement('span');
-const sourceImage = document.createElement('img');
 const seeProject = document.querySelectorAll('.see-project');
-const nextPrevious = document.createElement('div');
-const previous = document.createElement('img');
-const next = document.createElement('img');
-
 section.className = 'default';
-//xIcon.className = 'close-icon';
-//heading.className = 'popup-heading';
-//list.className = 'popup-list';
-//listItem1.classList.add('popup-list-item', 'popup-list-item1');
-//listItem2.classList.add('popup-list-item', 'popup-list-item2');
-//listItem3.classList.add('popup-list-item', 'popup-list-item3');
-//slideshow.className = 'slideshow';
-arrowLeft.className = 'arrow';
-arrowRight.className = 'arrow';
-slides.className = 'slides';
-image1.className = 'slide';
-image2.className = 'slide';
-image3.className = 'slide';
-image4.className = 'slide';
-flexContainer.className = 'center';
-paragraph1.className = 'about-project';
-paragraph2.className = 'about-project';
-buttons.className = 'popup-buttons';
-button1.className = 'live-source-buttons';
-span1.className = 'live-source-span';
-liveImage.className = 'live-image';
-button2.className = 'live-source-buttons';
-span2.className = 'live-source-span';
-sourceImage.className = 'live-image';
-nextPrevious.className = 'next-previous';
-previous.className = 'previous';
-next.className = 'next';
-
-xIcon.src = project[0].closePopup;
-//heading.textContent = project[0].name;
-//listItem1.textContent = project[0].item1;
-//listItem2.textContent = project[0].item2;
-//listItem3.textContent = project[0].item3;
-//arrowLeft.src = project[0].leftArrow;
-//arrowRight.src = project[0].rightArrow;
-image1.src = project[0].imageURL;
-image2.src = project[0].imageURL;
-image3.src = project[0].imageURL;
-image4.src = project[0].imageURL;
-paragraph1.textContent = project[0].description;
-paragraph2.textContent = project[0].description2;
-link1.href = project[0].liveVersionLink;
-span1.textContent = project[0].live;
-liveImage.src = project[0].liveImage;
-link2.href = project[0].sourceLink;
-span2.textContent = project[0].source;
-sourceImage.src = project[0].sourceImage;
-previous.src = project[0].previous;
-next.src = project[0].next;
-
 document.body.appendChild(section);
-//section.appendChild(xIcon);
-//section.appendChild(heading);
-//section.appendChild(list);
-//section.appendChild(slideshow);
-//list.appendChild(listItem1);
-//list.appendChild(listItem2);
-//list.appendChild(listItem3);
-//slideshow.appendChild(arrowLeft);
-//slideshow.appendChild(arrowRight);
-//section.appendChild(slides);
-//slides.appendChild(image1);
-//slides.appendChild(image2);
-//slides.appendChild(image3);
-//slides.appendChild(image4);
-//section.appendChild(flexContainer);
-//flexContainer.appendChild(paragraph1);
-//flexContainer.appendChild(paragraph2);
-//section.appendChild(buttons);
-//buttons.appendChild(button1);
-//button1.appendChild(link1);
-//link1.appendChild(span1);
-//link1.appendChild(liveImage);
-//buttons.appendChild(button2);
-//button2.appendChild(link2);//
-//link2.appendChild(span2);
-//link2.appendChild(sourceImage);
-//section.appendChild(nextPrevious);
-//nextPrevious.appendChild(previous);
-//nextPrevious.appendChild(next);
 
 const markup = `
   <img class="close-icon" src=${project[0].closePopup}>
@@ -169,10 +60,38 @@ const markup = `
     <img class="arrow" src=${project[0].leftArrow}>
     <img class="arrow" src=${project[0].rightArrow}>
   </div>
+  <div class="slides">
+    <img class="slide" src=${project[0].imageURL}>
+    <img class="slide" src=${project[0].imageURL}>
+    <img class="slide" src=${project[0].imageURL}>
+    <img class="slide" src=${project[0].imageURL}>
+  </div>
+  <div class="center">
+    <p class="about-project">${project[0].description}</p>
+    <p class="about-project">${project[0].description2}</p>
+  </div>
+  <div class="popup-buttons">
+    <button class="live-source-buttons">
+      <a href=${project[0].liveVersionLink}>
+        <span class="live-source-span">${project[0].live}</span>
+        <img class="live-image" src=${project[0].liveImage}>
+      </a>
+    </button>
+    <button class="live-source-buttons">
+      <a href=${project[0].sourceLink}>
+        <span class="live-source-span">${project[0].source}</span>
+        <img class="live-image" src=${project[0].sourceImage}>
+      </a>
+    </button>
+  </div>
+  <div class="next-previous">
+    <img class="previous" src=${project[0].previous}>
+    <img class="next" src=${project[0].next}>
+  </div>
 `;
 
 section.innerHTML = markup;
-
+const xIcon = document.querySelector('.close-icon');
 function display2() {
   section.classList.toggle('popup');
 }
