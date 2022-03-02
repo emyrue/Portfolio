@@ -14,31 +14,33 @@ for (let i = 0; i < mobileItem.length; i += 1) {
 }
 
 let project = {
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet,' + 
-    'consectetur adipiscing elit, sed do eiusmod ' +
-    'tempor incididunt ut labore et dolore magna ' + 
-    'aliqua. Ut enim ad minim veniam, quis nostrud ' + 
-    'exercitation ullamco laboris nisi',
-    description2: 'Ut aliquip ' + 
-    'ex ea commodo consequat.  Lorem ipsum dolor ' + 
-    'sit amet, consectetur adipiscing elit, sed do ' + 
-    'eiusmod tempor incididunt ut labore et dolore ' + 
-    'magna aliqua. Ut enim ad minim veniam, quis ' + 
-    'nostrud exercitation ullamco laboris nisi.',
-    closePopup: './images/close2.png',
-    leftArrow: './images/left-arrow.png',
-    rightArrow: './images/right-arrow.png',
-    item1: 'HTML/CSS',
-    item2: 'Ruby on Rails',
-    item3: 'JavaScript',
-    live: 'See live',
-    source: 'See source',
-    liveImage: './images/live.png',
-    sourceImage: './images/source.png',
-    imageURL: './images/computer-image2.png',
-    liveVersionLink: 'https://emyrue.github.io/Portfolio',
-    sourceLink: 'https://github.com/emyrue/Portfolio/'
+  name: 'Project name goes here',
+  description: 'Lorem ipsum dolor sit amet,' + 
+  'consectetur adipiscing elit, sed do eiusmod ' +
+  'tempor incididunt ut labore et dolore magna ' + 
+  'aliqua. Ut enim ad minim veniam, quis nostrud ' + 
+  'exercitation ullamco laboris nisi',
+  description2: 'Ut aliquip ' + 
+  'ex ea commodo consequat.  Lorem ipsum dolor ' + 
+  'sit amet, consectetur adipiscing elit, sed do ' + 
+  'eiusmod tempor incididunt ut labore et dolore ' + 
+  'magna aliqua. Ut enim ad minim veniam, quis ' + 
+  'nostrud exercitation ullamco laboris nisi.',
+  closePopup: './images/close2.png',
+  leftArrow: './images/left-arrow.png',
+  rightArrow: './images/right-arrow.png',
+  item1: 'HTML/CSS',
+  item2: 'Ruby on Rails',
+  item3: 'JavaScript',
+  live: 'See live',
+  source: 'See source',
+  liveImage: './images/live.png',
+  sourceImage: './images/source.png',
+  imageURL: './images/computer-image2.png',
+  next: './images/next.png',
+  previous: './images/previous.png',
+  liveVersionLink: 'https://emyrue.github.io/Portfolio',
+  sourceLink: 'https://github.com/emyrue/Portfolio/'
 }
 
 let section = document.createElement('section');
@@ -69,6 +71,9 @@ let link2 = document.createElement('a');
 let span2 = document.createElement('span');
 let sourceImage = document.createElement('img');
 let seeProject = document.querySelectorAll('.see-project');
+let nextPrevious = document.createElement('div');
+let previous = document.createElement('img');
+let next = document.createElement('img');
 
 section.className = 'default';
 xIcon.className = 'close-icon';
@@ -95,6 +100,9 @@ liveImage.className = 'live-image';
 button2.className = 'live-source-buttons';
 span2.className = 'live-source-span';
 sourceImage.className = 'live-image';
+nextPrevious.className = 'next-previous';
+previous.className = 'previous';
+next.className = 'next';
 
 xIcon.src = project.closePopup;
 heading.textContent = project.name;
@@ -115,6 +123,8 @@ liveImage.src = project.liveImage;
 link2.href = project.sourceLink;
 span2.textContent = project.source;
 sourceImage.src = project.sourceImage;
+previous.src = project.previous;
+next.src = project.next;
 
 document.body.appendChild(section);
 section.appendChild(xIcon);
@@ -143,13 +153,16 @@ buttons.appendChild(button2);
 button2.appendChild(link2);
 link2.appendChild(span2);
 link2.appendChild(sourceImage);
+section.appendChild(nextPrevious);
+nextPrevious.appendChild(previous);
+nextPrevious.appendChild(next);
 
 function display2() {
-    section.classList.toggle('popup');
+  section.classList.toggle('popup');
 }
 
 for (i = 0; i < seeProject.length; i += 1) {
-    seeProject[i].addEventListener('click', display2);
+  seeProject[i].addEventListener('click', display2);
 }
 
 xIcon.addEventListener('click', display2);
