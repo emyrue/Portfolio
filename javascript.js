@@ -117,7 +117,18 @@ let dataObject = {
 if (window.localStorage.getItem('datakey') !== null) {
   dataObject = JSON.parse(window.localStorage.getItem('datakey'));
 }
-    
+
+function validateEmail(input) {
+  const address = input.toString();
+  let isLower = false;
+
+  if (address === address.toLowerCase() && address !== '') {
+    isLower = true;
+  }
+
+  return isLower;
+}
+
 form.addEventListener('submit', (event) => {
   if (validateEmail(email.value)) {
     small.textContent = '';
@@ -131,20 +142,4 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-function validateEmail(input) {
-  const address = input.toString();
-  let isLower = false;
-
-  if (address === address.toLowerCase() && address !== '') {
-    isLower = true;
-  }
-
-  return isLower;
-}
-
-if (dataObject !== {}) {
-  fullName.value = dataObject.name;
-}
-
-
-  
+fullName.value = dataObject.name;
