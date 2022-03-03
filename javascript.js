@@ -105,7 +105,7 @@ xIcon.addEventListener('click', display2);
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small')[0];
 const email = document.getElementById('email');
-const name = document.getElementById('name');
+const fullName = document.getElementById('name');
 const message = document.getElementById('message');
 
 function validateEmail(input) {
@@ -122,8 +122,23 @@ function validateEmail(input) {
 form.addEventListener('submit', (event) => {
   if (validateEmail(email.value)) {
     small.textContent = '';
+    localStorage.setItem('name', fullName.value);
+    localStorage.setItem('email', email.value);
+    localStorage.setItem('message', message.value);
   } else {
     small.textContent = 'Please enter your email address without capital letters.';
     event.preventDefault();
   }
 });
+
+if (fullName.value !== '') {
+  fullName.value = localStorage['name'];
+}
+
+if (email.value !== '') {
+  email.value = localStorage['email'];
+}
+
+if (message.value != '') {
+  message.value = localStorage['message'];
+}
