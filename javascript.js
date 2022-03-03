@@ -143,3 +143,5 @@ form.addEventListener('submit', (event) => {
 });
 
 fullName.value = dataObject.name;
+email.value = dataObject.email;
+message.value = dataObject.message;
