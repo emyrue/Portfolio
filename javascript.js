@@ -117,8 +117,7 @@ function validateEmail(input) {
 
 form.addEventListener('submit', (event) => {
   if(validateEmail(email)) {
-    small.textContent = 'hey';
-    console.log("hello");
+    small.textContent = '';
   }
   else {
     small.textContent = 'Please enter your email address without capital letters.';
