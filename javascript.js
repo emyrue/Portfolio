@@ -108,37 +108,43 @@ const email = document.getElementById('email');
 const fullName = document.getElementById('name');
 const message = document.getElementById('message');
 
-function validateEmail(input) {
-  const address = input.toString();
-  let isLower = false;
+let dataObject = {
+  name: '',
+  email: '',
+  message: '',
+};
 
-  if (address === address.toLowerCase()) {
-    isLower = true;
-  }
-
-  return isLower;
+if (window.localStorage.getItem('datakey') !== null) {
+  dataObject = JSON.parse(window.localStorage.getItem('datakey'));
 }
-
+    
 form.addEventListener('submit', (event) => {
   if (validateEmail(email.value)) {
     small.textContent = '';
-    localStorage.setItem('name', fullName.value);
-    localStorage.setItem('email', email.value);
-    localStorage.setItem('message', message.value);
+    dataObject.name = fullName.value;
+    dataObject.email = email.value;
+    dataObject.message = message.value;
+    window.localStorage.setItem('datakey', JSON.stringify(dataObject));
   } else {
     small.textContent = 'Please enter your email address without capital letters.';
     event.preventDefault();
   }
 });
 
-if (fullName.value !== '') {
-  fullName.value = localStorage['name'];
+function validateEmail(input) {
+  const address = input.toString();
+  let isLower = false;
+
+  if (address === address.toLowerCase() && address !== '') {
+    isLower = true;
+  }
+
+  return isLower;
 }
 
-if (email.value !== '') {
-  email.value = localStorage['email'];
+if (dataObject !== {}) {
+  fullName.value = dataObject.name;
 }
 
-if (message.value != '') {
-  message.value = localStorage['message'];
-}
+
+  
