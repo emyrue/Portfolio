@@ -28,6 +28,7 @@ body {
 small {
   font-family: "Poppins", sans-serif;
   color: red;
+  margin: auto;
 }
 
 @media only screen and (max-width: 991px) {
