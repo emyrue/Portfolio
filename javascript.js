@@ -105,6 +105,8 @@ xIcon.addEventListener('click', display2);
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small')[0];
 const email = document.getElementById('email');
+const name = document.getElementById('name');
+const message = document.getElementById('message');
 
 function validateEmail(input) {
   const address = input.toString();
