@@ -105,12 +105,24 @@ xIcon.addEventListener('click', display2);
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small')[0];
 const email = document.getElementById('email');
+const fullName = document.getElementById('name');
+const message = document.getElementById('message');
+
+let dataObject = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+if (window.localStorage.getItem('datakey') !== null) {
+  dataObject = JSON.parse(window.localStorage.getItem('datakey'));
+}
 
 function validateEmail(input) {
   const address = input.toString();
   let isLower = false;
 
-  if (address === address.toLowerCase()) {
+  if (address === address.toLowerCase() && address !== '') {
     isLower = true;
   }
 
@@ -120,8 +132,16 @@ function validateEmail(input) {
 form.addEventListener('submit', (event) => {
   if (validateEmail(email.value)) {
     small.textContent = '';
+    dataObject.name = fullName.value;
+    dataObject.email = email.value;
+    dataObject.message = message.value;
+    window.localStorage.setItem('datakey', JSON.stringify(dataObject));
   } else {
     small.textContent = 'Please enter your email address without capital letters.';
     event.preventDefault();
   }
 });
+
+fullName.value = dataObject.name;
+email.value = dataObject.email;
+message.value = dataObject.message;
