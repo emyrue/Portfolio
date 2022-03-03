@@ -109,7 +109,7 @@ const email = document.getElementById('email');
 function validateEmail(input) {
   const address = input.toString();
   let isLower = false;
-  
+
   if (address === address.toLowerCase()) {
     isLower = true;
   }
