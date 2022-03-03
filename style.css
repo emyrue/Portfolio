@@ -25,6 +25,11 @@ body {
   margin-right: 30px;
 }
 
+small {
+  font-family: "Poppins", sans-serif;
+  color: red;
+}
+
 @media only screen and (max-width: 991px) {
   .banner2,
   .dots,
