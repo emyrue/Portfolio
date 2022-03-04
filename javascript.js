@@ -103,7 +103,7 @@ for (let m = 0; m < seeProject.length; m += 1) {
 xIcon.addEventListener('click', display2);
 
 const form = document.getElementById('form');
-const small = document.getElementsByTagName('small')[0];
+const small = document.getElementsByTagName('small');
 const email = document.getElementById('email');
 const fullName = document.getElementById('name');
 const message = document.getElementById('message');
@@ -120,7 +120,7 @@ if (window.localStorage.getItem('datakey') !== null) {
 
 function validateEmail(input) {
   const address = input.toString();
-  let isLower = false;
+  let isLower = true;
 
   if (address === address.toLowerCase() && address !== '') {
     isLower = true;
@@ -142,6 +142,6 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-fullName.value = dataObject.name;
+fullName.value = dataObject.email;
 email.value = dataObject.email;
 message.value = dataObject.message;
