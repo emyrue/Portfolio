@@ -36,11 +36,14 @@ const project = [{
   source: 'See source',
   liveImage: './images/live.png',
   sourceImage: './images/source.png',
-  imageURL: './images/computer-image2.png',
+  image1URL: './images/headline.png',
+  image2URL: './images/information.png',
+  image3URL: './images/featured.png',
+  image4URL: './images/about.png',
   next: './images/next.png',
   previous: './images/previous.png',
-  liveVersionLink: 'https://emyrue.github.io/Portfolio',
-  sourceLink: 'https://github.com/emyrue/Portfolio/',
+  liveVersionLink: 'https://emyrue.github.io/ConcertListing/',
+  sourceLink: 'https://github.com/emyrue/ConcertListing/',
 }];
 
 const section = document.createElement('section');
@@ -56,15 +59,15 @@ const markup = `
     <li class="popup-list-item popup-list-item2">${project[0].item2}</li>
     <li class="popup-list-item">${project[0].item3}</li>
   </ul>
-  <div class="slideshow">
-    <img class="arrow" src=${project[0].leftArrow}>
-    <img class="arrow" src=${project[0].rightArrow}>
+  <div class="slideshow slideshow1">
+    <img class="arrow arrow-left" src=${project[0].leftArrow}>
+    <img class="arrow arrow-right" src=${project[0].rightArrow}>
   </div>
   <div class="slides">
-    <img class="slide" src=${project[0].imageURL}>
-    <img class="slide" src=${project[0].imageURL}>
-    <img class="slide" src=${project[0].imageURL}>
-    <img class="slide" src=${project[0].imageURL}>
+    <img class="slide slide1 border" src=${project[0].image1URL}>
+    <img class="slide slide2" src=${project[0].image2URL}>
+    <img class="slide slide3" src=${project[0].image3URL}>
+    <img class="slide slide4" src=${project[0].image4URL}>
   </div>
   <div class="center">
     <p class="about-project">${project[0].description}</p>
@@ -101,6 +104,52 @@ for (let m = 0; m < seeProject.length; m += 1) {
 }
 
 xIcon.addEventListener('click', display2);
+
+const slideDisplay = document.querySelector('.slideshow');
+const arrowToLeft = document.querySelector('.arrow-left');
+const arrowToRight = document.querySelector('.arrow-right');
+const firstSlide = document.querySelector('.slide1');
+const secondSlide = document.querySelector('.slide2');
+const thirdSlide = document.querySelector('.slide3');
+const fourthSlide = document.querySelector('.slide4');
+
+arrowToLeft.addEventListener('click', () => {
+  if (slideDisplay.classList.contains('slideshow4')) {
+    slideDisplay.classList.remove('slideshow4');
+    slideDisplay.classList.add('slideshow3');
+    fourthSlide.classList.remove('border');
+    thirdSlide.classList.add('border');
+  } else if (slideDisplay.classList.contains('slideshow3')) {
+    slideDisplay.classList.remove('slideshow3');
+    slideDisplay.classList.add('slideshow2');
+    thirdSlide.classList.remove('border');
+    secondSlide.classList.add('border');
+  } else if (slideDisplay.classList.contains('slideshow2')) {
+    slideDisplay.classList.remove('slideshow2');
+    slideDisplay.classList.add('slideshow1');
+    secondSlide.classList.remove('border');
+    firstSlide.classList.add('border');
+  }
+});
+
+arrowToRight.addEventListener('click', () => {
+  if (slideDisplay.classList.contains('slideshow1')) {
+    slideDisplay.classList.remove('slideshow1');
+    slideDisplay.classList.add('slideshow2');
+    firstSlide.classList.remove('border');
+    secondSlide.classList.add('border');
+  } else if (slideDisplay.classList.contains('slideshow2')) {
+    slideDisplay.classList.remove('slideshow2');
+    slideDisplay.classList.add('slideshow3');
+    secondSlide.classList.remove('border');
+    thirdSlide.classList.add('border');
+  } else if (slideDisplay.classList.contains('slideshow3')) {
+    slideDisplay.classList.remove('slideshow3');
+    slideDisplay.classList.add('slideshow4');
+    thirdSlide.classList.remove('border');
+    fourthSlide.classList.add('border');
+  }
+});
 
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small');

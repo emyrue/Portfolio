@@ -92,7 +92,6 @@ small {
   }
 
   .slideshow {
-    background-image: url('./images/computer-image2.png');
     background-size: calc(100% - 20px);
     height: 45vw;
     background-repeat: no-repeat;
@@ -101,8 +100,25 @@ small {
     align-items: center;
   }
 
+  .slideshow1 {
+    background-image: url('./images/headline.png');
+  }
+
+  .slideshow2 {
+    background-image: url('./images/information.png');
+  }
+
+  .slideshow3 {
+    background-image: url('./images/featured.png');
+  }
+
+  .slideshow4 {
+    background-image: url('./images/about.png');
+  }
+
   .arrow {
     margin-right: 30px;
+    border: 1px solid black;
   }
 
   .slides {
@@ -111,6 +127,10 @@ small {
 
   .slide {
     width: calc(25% - 5px);
+  }
+
+  .border {
+    border: 2px solid black;
   }
 
   .about-project {
@@ -680,7 +700,6 @@ textarea::placeholder {
   }
 
   .slideshow {
-    background-image: url('./images/computer-image2.png');
     background-size: calc(100% - 20px);
     height: 45vw;
     background-repeat: no-repeat;
@@ -689,8 +708,25 @@ textarea::placeholder {
     align-items: center;
   }
 
+  .slideshow1 {
+    background-image: url('./images/headline.png');
+  }
+
+  .slideshow2 {
+    background-image: url('./images/information.png');
+  }
+
+  .slideshow3 {
+    background-image: url('./images/featured.png');
+  }
+
+  .slideshow4 {
+    background-image: url('./images/about.png');
+  }
+
   .arrow {
     margin-right: 30px;
+    border: 1px solid black;
   }
 
   .slides {
@@ -699,6 +735,10 @@ textarea::placeholder {
 
   .slide {
     width: calc(25% - 5px);
+  }
+
+  .border {
+    border: 2px solid black;
   }
 
   .center {
